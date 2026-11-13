@@ -3,7 +3,11 @@ import { carregarListagem, caminhoNoArchive, urlArquivo, buscarItens, metadadosI
 
 const app = document.getElementById("app");
 const trilha = document.getElementById("trilha");
-const DISCOS = ["digerati"];
+let listaDiscos = null;
+async function idsDiscos() {
+  listaDiscos ??= fetch("data/discos.json").then((r) => r.json());
+  return (await listaDiscos).map((d) => d.id);
+}
 const cacheDiscos = new Map();
 
 // ---------- armazenamento local (favoritos e recentes) ----------
@@ -89,7 +93,7 @@ function telaCheia(el) {
 
 // ---------- telas ----------
 async function telaEstante() {
-  const discos = await Promise.all(DISCOS.map(disco));
+  const discos = await Promise.all((await idsDiscos()).map(disco));
   const recentes = guardar.ler("recentes", []);
   app.replaceChildren(h(`
     <section class="intro">
@@ -105,7 +109,7 @@ async function telaEstante() {
             <img src="https://archive.org/services/img/${esc(d.item)}" alt="" loading="lazy">
             <div>
               <strong>${esc(d.titulo)}</strong>
-              <span>${d.ano} · ${todosJogos(d).length} jogos · ${d.categorias.length} categorias</span>
+              <span>${d.ano ? d.ano + " · " : ""}${todosJogos(d).length} jogos · ${d.categorias.length} categorias</span>
             </div>
           </a>`).join("")}
         <a class="disco-card disco-vazio" href="#/explorar">
@@ -142,10 +146,10 @@ async function telaDisco(id) {
       <img class="disco-capa" src="https://archive.org/services/img/${esc(d.item)}" alt="Capa do DVD">
       <div>
         <h1>${esc(d.titulo)}</h1>
-        <p>${d.ano} · ${jogos.length} jogos</p>
+        <p>${d.ano ? d.ano + " · " : ""}${jogos.length} jogos</p>
         <div class="acoes">
-          <button class="botao" id="bt-trilha" type="button">♪ Trilha do menu</button>
-          <a class="botao" href="${base(d.revista)}" target="_blank" rel="noopener">Revista (PDF)</a>
+          ${d.trilha ? `<button class="botao" id="bt-trilha" type="button">♪ Trilha do menu</button>` : ""}
+          ${d.revista ? `<a class="botao" href="${base(d.revista)}" target="_blank" rel="noopener">Revista (PDF)</a>` : ""}
           <a class="botao" href="#/item/${encodeURIComponent(d.item)}">Ver todos os arquivos</a>
           <a class="botao" href="https://archive.org/details/${esc(d.item)}" target="_blank" rel="noopener">No archive.org ↗</a>
         </div>
@@ -190,7 +194,7 @@ async function telaDisco(id) {
       <a class="jogo${j.tipo !== "swf" ? " jogo-off" : ""}" href="#/disco/${id}/jogar/${encodeURIComponent(j.arquivo)}" title="${esc(j.descricao)}">
         <img src="${base(j.imagem)}" alt="" loading="lazy">
         ${fav.has(chaveJogo(id, j.arquivo)) ? `<span class="selo-fav" aria-label="favorito">★</span>` : ""}
-        ${j.tipo !== "swf" ? `<span class="selo">Shockwave</span>` : ""}
+        ${j.tipo !== "swf" ? `<span class="selo">${j.tipo === "windows" ? "Windows" : "Shockwave"}</span>` : ""}
         <span class="jogo-nome">${esc(j.nome)}</span>
         <span class="jogo-cat">${esc(j.categoria)}</span>
       </a>`).join("")
@@ -204,7 +208,7 @@ async function telaDisco(id) {
     desenhar();
   });
   busca.addEventListener("input", () => { estadoDisco.busca = busca.value; desenhar(); });
-  ligarTrilha(app.querySelector("#bt-trilha"), base(d.trilha));
+  if (d.trilha) ligarTrilha(app.querySelector("#bt-trilha"), base(d.trilha));
   desenhar();
 }
 
@@ -242,7 +246,7 @@ async function telaJogoDisco(id, arquivo) {
     controles,
     url,
     chave,
-    shockwave: j.tipo !== "swf",
+    incompativel: j.tipo === "swf" ? null : j.tipo,
     anterior: i > 0 ? `#/disco/${id}/jogar/${encodeURIComponent(jogos[i - 1].arquivo)}` : null,
     proximo: i < jogos.length - 1 ? `#/disco/${id}/jogar/${encodeURIComponent(jogos[i + 1].arquivo)}` : null,
   });
@@ -275,14 +279,17 @@ function telaPlayer(o) {
     </section>
   `));
   const palco = app.querySelector("#palco");
-  if (o.shockwave) {
+  if (o.incompativel === "windows") {
+    palco.replaceChildren(h(`<div class="aviso">Este é um <strong>programa de Windows</strong> (.exe), não um jogo em Flash, então não roda no navegador.
+      Dá para baixar e abrir no Windows (ou no Wine).</div>`));
+  } else if (o.incompativel) {
     palco.replaceChildren(h(`<div class="aviso">Este jogo é <strong>Shockwave</strong> (Adobe Director), um formato diferente do Flash que o Ruffle ainda não roda.
       Dá para baixar o arquivo e abrir num PC antigo ou máquina virtual com o Shockwave Player.</div>`));
   } else {
     montarPlayer(palco, o.url);
   }
   app.querySelector("#bt-cheia").addEventListener("click", () => telaCheia(palco));
-  app.querySelector("#bt-reiniciar").addEventListener("click", () => !o.shockwave && montarPlayer(palco, o.url));
+  app.querySelector("#bt-reiniciar").addEventListener("click", () => !o.incompativel && montarPlayer(palco, o.url));
   app.querySelector("#bt-fav").addEventListener("click", (e) => {
     const agora = alternarFavorito(o.chave);
     e.currentTarget.textContent = agora ? "★ Favorito" : "☆ Favoritar";
