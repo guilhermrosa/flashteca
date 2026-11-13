@@ -208,7 +208,7 @@ async function telaDisco(id) {
       <div class="chips" role="tablist"></div>
       <div class="linha-busca">
         <input class="busca" type="search" placeholder="Buscar jogo…" aria-label="Buscar jogo">
-        ${jogos.some((j) => !jogavel(j)) ? `<label class="opcao"><input type="checkbox" id="mostrar-off"> Mostrar os ${jogos.filter((j) => !jogavel(j)).length} que não rodam no navegador</label>` : ""}
+        ${jogos.some((j) => !jogavel(j)) ? `<label class="opcao"><input type="checkbox" id="mostrar-off"> ${((n) => (n === 1 ? "Mostrar o 1 que não roda" : `Mostrar os ${n} que não rodam`))(jogos.filter((j) => !jogavel(j)).length)} no navegador</label>` : ""}
       </div>
     </section>
     <p class="contagem" aria-live="polite"></p>

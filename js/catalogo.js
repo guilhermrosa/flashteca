@@ -1,10 +1,10 @@
 // Monta o catálogo de um disco direto da imagem no archive.org, lendo o menu original do CD.
-// Formatos suportados (menus da Digerati):
-//   - "xml":      pasta XML/ com um arquivo por categoria (discos de ~2007 em diante)
-//   - "conteudo": interface/conteudo.htm, uma planilha exportada do Excel (discos de ~2004)
+// Formato suportado: o menu dos discos da Digerati de ~2007 em diante, com uma pasta XML/ que tem
+// um arquivo por categoria (nome, descrição, controles e caminho de cada jogo) e as miniaturas em
+// Interface/Imagens/.
 import { carregarListagem, metadadosItem, urlArquivo, CONTEINERES } from "./archive.js";
 
-const VERSAO = 4; // mude para invalidar catálogos guardados no navegador
+const VERSAO = 5; // mude para invalidar catálogos guardados no navegador
 const IGNORAR = new Set(["ESSENCIAIS", "WALLPAPERS", "ANTI-VÍRUS", "ANTI-VIRUS", "AVG"]);
 const MINUSCULAS = new Set(["de", "da", "do", "e", "a", "o"]);
 const JOGAVEIS = new Set(["swf", "pagina"]);
@@ -39,9 +39,7 @@ async function texto(item, conteiner, caminho) {
 // Detecta, só pela listagem, se a imagem tem um menu que a Flashteca entende.
 export function detectarFormato(arquivos) {
   const caminhos = arquivos.map((a) => a.caminho.toLowerCase());
-  if (caminhos.some((c) => /^xml\/[^/]+\.xml$/.test(c))) return "xml";
-  if (caminhos.includes("interface/conteudo.htm")) return "conteudo";
-  return null;
+  return caminhos.some((c) => /^xml\/[^/]+\.xml$/.test(c)) ? "xml" : null;
 }
 
 function lerTag(bloco, tag) {
@@ -80,48 +78,6 @@ async function categoriasXml(item, conteiner, arquivos, achar, classificar, imag
   return categorias;
 }
 
-// Nos discos de 2004 as miniaturas não seguem uma regra só: podem ter o nome do arquivo, o número
-// do jogo na tabela, o nome da pasta ou o título (às vezes abreviado). Tenta do mais exato ao mais solto.
-function acharImagem(imagens, { arquivo, numero, nome }) {
-  const norm = (x) => semAcento(x).toLowerCase().replace(/[^a-z0-9]/g, "");
-  const porNorm = (imagens._norm ??= new Map([...imagens].map(([k, v]) => [norm(k), v])));
-  const partes = arquivo.split("/");
-  const exatos = [radical(arquivo), numero, partes.length > 2 ? partes.at(-2).toLowerCase() : null];
-  for (const k of exatos) if (k && imagens.has(k)) return imagens.get(k);
-  for (const k of [nome, radical(arquivo)].map(norm)) if (porNorm.has(k)) return porNorm.get(k);
-  // prefixo: "baroque" ↔ "Baroque Shooting", "blast" ↔ "Blast Em!" (exige 5+ letras e pega o mais longo)
-  const alvo = norm(nome);
-  let melhor = null;
-  for (const [k, v] of porNorm) {
-    if (k.length >= 5 && !/^\d+$/.test(k) && (alvo.startsWith(k) || (k.startsWith(alvo) && alvo.length >= 5)) && (!melhor || k.length > melhor[0].length)) melhor = [k, v];
-  }
-  return melhor?.[1] || null;
-}
-
-async function categoriasConteudo(item, conteiner, achar, classificar, imagens, progresso) {
-  progresso?.("Lendo a lista de conteúdo do disco…");
-  const doc = new DOMParser().parseFromString(await texto(item, conteiner, "interface/conteudo.htm"), "text/html");
-  const categorias = [];
-  let atual = null;
-  for (const tr of doc.querySelectorAll("tr")) {
-    const celulas = [...tr.querySelectorAll("td")].map((td) => td.textContent.replace(/\s+/g, " ").trim()).filter(Boolean);
-    if (celulas.length === 1) { // linha solta: título do disco ou nome de uma categoria nova
-      atual = { nome: nomeCategoria(celulas[0]), jogos: [] };
-      categorias.push(atual);
-      continue;
-    }
-    if (!atual || celulas.length < 4 || !/^\d+$/.test(celulas[0])) continue; // cabeçalho "#" e lixo
-    const [numero, nome] = celulas;
-    const caminho = celulas.at(-1);
-    const [descricao, controles] = celulas.length >= 5 ? [celulas[2], celulas[3]] : [celulas[2], ""];
-    const arquivo = achar(caminho);
-    const tipo = arquivo && classificar(arquivo);
-    if (!tipo) continue;
-    atual.jogos.push({ nome, descricao, controles, arquivo, tipo, imagem: acharImagem(imagens, { arquivo, numero, nome }) });
-  }
-  return categorias;
-}
-
 // Lê o disco inteiro e devolve { item, iso, titulo, ano, formato, trilha, revista, categorias }.
 export async function montarCatalogo(item, { conteiner, progresso } = {}) {
   progresso?.("Lendo informações do item…");
@@ -136,14 +92,7 @@ export async function montarCatalogo(item, { conteiner, progresso } = {}) {
     if (!formato) continue;
 
     const porMin = new Map(arquivos.map((a) => [a.caminho.toLowerCase(), a.caminho]));
-    // se o arquivo citado não foi gravado no CD, tenta o mesmo nome com outra extensão (ex.: .htm → .swf)
-    const achar = (p) => {
-      const c = p.replace(/\\/g, "/").replace(/^\/+/, "").toLowerCase();
-      if (porMin.has(c)) return porMin.get(c);
-      const sem = c.replace(/\.[^./]+$/, "");
-      for (const ext of ["swf", "dcr", "exe", "com"]) if (porMin.has(`${sem}.${ext}`)) return porMin.get(`${sem}.${ext}`);
-      return null;
-    };
+    const achar = (p) => porMin.get(p.replace(/\\/g, "/").replace(/^\/+/, "").toLowerCase()) || null;
     // página em pasta com .dcr e nenhum .swf: é um jogo Shockwave (o Ruffle não roda)
     const extsPorPasta = new Map();
     for (const a of arquivos) {
@@ -158,9 +107,7 @@ export async function montarCatalogo(item, { conteiner, progresso } = {}) {
     };
     const imagens = new Map(arquivos.filter((a) => /^interface\/imagens\//i.test(a.caminho)).map((a) => [radical(a.caminho), a.caminho]));
 
-    const brutas = formato === "xml"
-      ? await categoriasXml(item, c, arquivos, achar, classificar, imagens, progresso)
-      : await categoriasConteudo(item, c, achar, classificar, imagens, progresso);
+    const brutas = await categoriasXml(item, c, arquivos, achar, classificar, imagens, progresso);
 
     const categorias = brutas
       .filter((cat) => cat.jogos.some((j) => JOGAVEIS.has(j.tipo)))

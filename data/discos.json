@@ -7,17 +7,10 @@
   "iso": "Digerati Games - 450 Jogos em DVD.iso"
  },
  {
-  "id": "jogos-de-meninas-3",
-  "titulo": "Digerati Jogos de Meninas #3 — 800 Jogos",
-  "ano": null,
-  "item": "digerati-jogos-de-meninas-3-cd-rom",
-  "iso": "JOME.ISO"
- },
- {
-  "id": "game-mix-01",
-  "titulo": "Game Mix Nº 1 — GMIX001",
-  "ano": 2004,
-  "item": "game-mix-01",
-  "iso": "GameMix01.iso"
+  "id": "jogos-de-menina-300",
+  "titulo": "Digerati Jogos de Menina — + de 300 Jogos",
+  "ano": 2008,
+  "item": "goma_300",
+  "iso": "GOMA.ISO"
  }
 ]
