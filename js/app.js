@@ -177,205 +177,135 @@ async function telaEstante() {
   `));
 }
 
-// O menu do disco imita os menus dos CDs: tela inicial com as categorias e uma lista em tabela.
-// O estado fica entre navegações (ex.: voltar do jogo para a lista em que se estava).
-const estadoDisco = { id: null, tela: "menu", categoria: "todos", busca: "", selecionado: null, mostrarOff: false };
+// Página de um disco: cabeçalho com a capa, abas de categoria, busca e os jogos em grade ou lista.
+// O estado fica entre navegações (ex.: voltar do jogo para a mesma categoria e busca).
+const estadoDisco = { id: null, categoria: "todos", busca: "", mostrarOff: false };
 const jogavel = (j) => j.tipo === "swf" || j.tipo === "pagina";
-const telaPequena = () => matchMedia("(max-width: 760px)").matches;
-const temaDoDisco = (d) => d.tema || (/menin|girl|garota/i.test(d.titulo + d.item) ? "rosa" : "azul");
 
 async function telaDisco(id) {
   const d = await disco(id, carregando);
   const jogos = todosJogos(d);
-  const total = jogos.filter(jogavel).length;
+  const jogaveis = jogos.filter(jogavel);
+  const naoRodam = jogos.length - jogaveis.length;
   const base = (p) => urlArquivo(d.item, d.iso, p);
-  if (estadoDisco.id !== id) Object.assign(estadoDisco, { id, tela: "menu", categoria: "todos", busca: "", selecionado: null, mostrarOff: false });
-  const naoRodam = jogos.length - total;
-  const minha = d.origem !== "site";
+  const capa = `https://archive.org/services/img/${encodeURIComponent(d.item)}`;
+  const linkJogo = (j) => `#/disco/${encodeURIComponent(id)}/jogar/${encodeURIComponent(j.arquivo)}`;
+  if (estadoDisco.id !== id) Object.assign(estadoDisco, { id, categoria: "todos", busca: "", mostrarOff: false });
+  let modo = guardar.ler("modo", "grade");
 
   app.replaceChildren(h(`
     <a class="voltar" href="#/">← Estante</a>
-    <section class="cd tema-${temaDoDisco(d)}" aria-label="Menu do disco ${esc(d.titulo)}">
-      <div class="cd-titulo">
-        <img src="img/icone.svg" alt="">
-        <strong>${esc(d.titulo)}</strong>
-        <div class="cd-janela-botoes">
-          <span aria-hidden="true">?</span><span aria-hidden="true">–</span>
-          <a href="#/" aria-label="Fechar o disco e voltar à estante" title="Fechar">✕</a>
+    <section class="disco-hero">
+      <img class="disco-hero-capa" src="${capa}" alt="Foto do disco">
+      <div class="disco-hero-info">
+        <p class="sobre">${d.ano ? `${d.ano} · ` : ""}CD-ROM</p>
+        <h1>${esc(d.titulo)}</h1>
+        <p class="disco-numeros"><b>${jogaveis.length}</b> jogos <span>·</span> <b>${d.categorias.length}</b> categorias</p>
+      </div>
+      <div class="disco-hero-acoes">
+        <div class="acoes">
+          <a class="botao botao-forte" id="bt-aleatorio" href="#">🎲 Jogar um aleatório</a>
+          ${d.trilha ? `<button class="botao" id="bt-trilha" type="button"></button>` : ""}
+          ${d.revista ? `<a class="botao" href="${base(d.revista)}" target="_blank" rel="noopener">Revista do CD</a>` : ""}
+          <a class="botao" href="#/item/${encodeURIComponent(d.item)}">Arquivos</a>
+          <a class="botao" href="https://archive.org/details/${esc(d.item)}" target="_blank" rel="noopener">archive.org ↗</a>
         </div>
-      </div>
-      <div class="cd-ferramentas">
-        <form class="cd-busca" role="search">
-          <label for="cd-q">BUSCA:</label>
-          <input id="cd-q" name="q" type="search" autocomplete="off">
-          <button class="cd-bt" type="submit" style="padding:0 6px">OK</button>
-        </form>
-        ${d.trilha ? `<button class="cd-ferramenta" id="bt-trilha" type="button"><span class="ico">♪</span><span class="rotulo"></span></button>` : ""}
-        ${d.revista ? `<a class="cd-ferramenta" href="${base(d.revista)}" target="_blank" rel="noopener"><span class="ico">▤</span><span class="rotulo">Revista</span></a>` : ""}
-        <a class="cd-ferramenta" href="#/item/${encodeURIComponent(d.item)}"><span class="ico">◎</span><span class="rotulo">Conteúdo do CD</span></a>
-        <button class="cd-ferramenta cd-direita" id="bt-menu" type="button"><span class="ico">↩</span><span class="rotulo">Menu principal</span></button>
-      </div>
-      <div class="cd-corpo"></div>
-      <div class="cd-status">
-        <span>${total} jogos${d.ano ? ` · ${d.ano}` : ""} · lido direto do Internet Archive</span>
-        <a href="https://archive.org/details/${esc(d.item)}" target="_blank" rel="noopener">ver no archive.org ↗</a>
+        ${d.origem !== "site" ? `
+        <div class="acoes">
+          <button class="botao" id="bt-estante" type="button"></button>
+          <a class="botao" href="${esc(linkPublicar(d))}" target="_blank" rel="noopener" title="Abre uma issue no GitHub; a Action do repositório adiciona o disco">Publicar na estante do site ↗</a>
+        </div>` : ""}
       </div>
     </section>
-    ${minha ? `
-    <div class="acoes">
-      <button class="botao botao-forte" id="bt-estante" type="button"></button>
-      <a class="botao" href="${esc(linkPublicar(d))}" target="_blank" rel="noopener" title="Abre uma issue no GitHub; a Action do repositório adiciona o disco">Publicar na estante do site ↗</a>
-    </div>` : ""}
+
+    <div class="disco-barra">
+      <div class="abas" role="tablist" aria-label="Categorias"></div>
+      <div class="disco-barra-linha">
+        <input class="busca" type="search" placeholder="Buscar neste disco…" aria-label="Buscar neste disco">
+        <div class="alternar" role="group" aria-label="Visualização">
+          <button type="button" data-modo="grade" title="Grade">▦</button>
+          <button type="button" data-modo="lista" title="Lista">☰</button>
+        </div>
+      </div>
+    </div>
+    <div class="disco-barra-info">
+        <span class="contagem" aria-live="polite"></span>
+      ${naoRodam ? `<label class="opcao"><input type="checkbox" id="mostrar-off"> mostrar ${naoRodam === 1 ? "o 1 jogo que não roda" : `os ${naoRodam} jogos que não rodam`} no navegador</label>` : ""}
+    </div>
+    <div class="jogos"></div>
   `));
 
-  const corpo = app.querySelector(".cd-corpo");
-  const ir = (mudanca) => { Object.assign(estadoDisco, mudanca); desenhar(); };
+  const abas = app.querySelector(".abas");
+  const busca = app.querySelector(".busca");
+  const area = app.querySelector(".jogos");
+  const contagem = app.querySelector(".contagem");
+  const off = app.querySelector("#mostrar-off");
+  busca.value = estadoDisco.busca;
+  if (off) off.checked = estadoDisco.mostrarOff;
 
   function desenhar() {
-    if (estadoDisco.tela === "menu") desenharMenu();
-    else desenharLista();
-  }
-
-  function desenharMenu() {
-    const cats = d.categorias.map((c) => ({ id: c.id, nome: c.nome, n: c.jogos.filter(jogavel).length }));
-    const meio = Math.ceil(cats.length / 2);
-    const botao = (c, extra = "") => `<button type="button" class="cd-cat ${extra}" data-cat="${c.id}">${esc(c.nome)} <small>${c.n}</small></button>`;
-    const nFav = jogos.filter((j) => favoritos().has(chaveJogo(id, j.arquivo))).length;
-    corpo.innerHTML = `
-      <div class="cd-menu">
-        <div class="cd-marca"><strong>${total}</strong><span>JOGOS</span><small>TODOS RODAM DIRETO DO NAVEGADOR</small></div>
-        <div class="cd-cats">${cats.slice(0, meio).map((c) => botao(c)).join("")}</div>
-        <div class="cd-capa"><img src="https://archive.org/services/img/${esc(d.item)}" alt="Foto do disco"></div>
-        <div class="cd-cats direita">${cats.slice(meio).map((c) => botao(c)).join("")}
-          ${botao({ id: "todos", nome: "Listar todos", n: total }, "cd-cat-especial")}
-          ${nFav ? botao({ id: "favoritos", nome: "★ Favoritos", n: nFav }, "cd-cat-especial") : ""}
-        </div>
-      </div>`;
-    corpo.querySelectorAll("[data-cat]").forEach((b) => b.addEventListener("click", () =>
-      ir({ tela: "lista", categoria: b.dataset.cat, busca: "", selecionado: null })));
-  }
-
-  function filtrar() {
     const fav = favoritos();
     const termo = semAcento(estadoDisco.busca.trim());
-    let lista = estadoDisco.mostrarOff ? jogos : jogos.filter(jogavel);
+    const visiveis = estadoDisco.mostrarOff ? jogos : jogaveis;
+    const opcoes = [
+      { id: "todos", nome: "Todos", n: visiveis.length },
+      ...d.categorias.map((c) => ({ id: c.id, nome: c.nome, n: visiveis.filter((j) => j.categoriaId === c.id).length })),
+      { id: "favoritos", nome: "★ Favoritos", n: visiveis.filter((j) => fav.has(chaveJogo(id, j.arquivo))).length },
+    ];
+    abas.innerHTML = opcoes.map((o) => `<button type="button" role="tab" data-cat="${o.id}" aria-selected="${o.id === estadoDisco.categoria}">${esc(o.nome)}<small>${o.n}</small></button>`).join("");
+
+    let lista = visiveis;
     if (estadoDisco.categoria === "favoritos") lista = lista.filter((j) => fav.has(chaveJogo(id, j.arquivo)));
     else if (estadoDisco.categoria !== "todos") lista = lista.filter((j) => j.categoriaId === estadoDisco.categoria);
     if (termo) lista = lista.filter((j) => semAcento(j.nome + " " + j.descricao).includes(termo));
-    return lista;
-  }
+    contagem.textContent = lista.length === 1 ? "1 jogo" : `${lista.length} jogos`;
 
-  function desenharLista() {
-    const cat = d.categorias.find((c) => c.id === estadoDisco.categoria);
-    const titulo = estadoDisco.busca && estadoDisco.categoria === "todos" ? "Resultado da busca"
-      : estadoDisco.categoria === "favoritos" ? "Favoritos" : cat ? cat.nome : "Todos os jogos";
-    corpo.innerHTML = `
-      <div class="cd-lista">
-        <div class="cd-lista-topo">
-          <span>Categoria - <b>${esc(titulo)}</b></span>
-          <button type="button" id="cd-voltar">Voltar</button>
-        </div>
-        <div class="cd-lista-caixa">
-          <form class="cd-pesquisa" role="search">
-            <label for="cd-p">Pesquisar por :</label>
-            <input id="cd-p" type="search" autocomplete="off">
-            <button class="cd-bt" type="submit">Buscar</button>
-            <button class="cd-bt" type="button" id="cd-todos">Listar Todos</button>
-            ${naoRodam ? `<label class="cd-opcao"><input type="checkbox" id="cd-off"> mostrar os ${naoRodam} que não rodam</label>` : ""}
-          </form>
-          <div class="cd-lista-conteudo">
-            <div class="cd-tabela" role="listbox" tabindex="0" aria-label="Jogos">
-              <div class="cd-cab" aria-hidden="true"><span>Nº</span><span>Nome</span><span>Categoria</span><span>★</span></div>
-              <div class="cd-linhas"></div>
-            </div>
-            <aside class="cd-detalhe" aria-live="polite"></aside>
+    app.querySelectorAll("[data-modo]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.modo === modo));
+    area.className = `jogos ${modo}`;
+    area.innerHTML = lista.length ? lista.map((j) => {
+      const ok = jogavel(j);
+      const ehFav = fav.has(chaveJogo(id, j.arquivo));
+      const img = j.imagem ? `<img src="${base(j.imagem)}" alt="" loading="lazy">` : `<div class="sem-capa">${esc(j.nome.slice(0, 2))}</div>`;
+      const selo = ok ? "" : `<span class="selo">${j.tipo === "windows" ? "Windows/DOS" : "Shockwave"}</span>`;
+      return `
+        <a class="cartao-jogo${ok ? "" : " off"}" href="${linkJogo(j)}" ${modo === "grade" ? `title="${esc(j.descricao)}"` : ""}>
+          <div class="cartao-img">${img}${selo}${ok ? `<span class="cartao-play" aria-hidden="true">▶</span>` : ""}</div>
+          <div class="cartao-texto">
+            <strong>${esc(j.nome)}${ehFav ? ` <span class="estrela" aria-label="favorito">★</span>` : ""}</strong>
+            ${modo === "lista" && j.descricao ? `<p>${esc(j.descricao)}</p>` : ""}
+            <span class="cartao-cat">${esc(j.categoria)}</span>
           </div>
-        </div>
-      </div>`;
-
-    const linhas = corpo.querySelector(".cd-linhas");
-    const detalhe = corpo.querySelector(".cd-detalhe");
-    const tabela = corpo.querySelector(".cd-tabela");
-    const campo = corpo.querySelector("#cd-p");
-    campo.value = estadoDisco.busca;
-    const off = corpo.querySelector("#cd-off");
-    if (off) off.checked = estadoDisco.mostrarOff;
-
-    let lista = [];
-    const linkJogo = (j) => `#/disco/${encodeURIComponent(id)}/jogar/${encodeURIComponent(j.arquivo)}`;
-
-    function preencher() {
-      lista = filtrar();
-      const fav = favoritos();
-      if (!lista.some((j) => j.arquivo === estadoDisco.selecionado)) estadoDisco.selecionado = lista[0]?.arquivo ?? null;
-      linhas.innerHTML = lista.length ? lista.map((j, i) => `
-        <div class="cd-linha${jogavel(j) ? "" : " off"}" role="option" id="cd-l${i}" data-i="${i}" aria-selected="${j.arquivo === estadoDisco.selecionado}">
-          <span>${i + 1}</span><span>${esc(j.nome)}</span><span>${esc(j.categoria)}</span><span class="fav">${fav.has(chaveJogo(id, j.arquivo)) ? "★" : ""}</span>
-        </div>`).join("")
-        : `<div class="cd-vazio">${estadoDisco.categoria === "favoritos" ? "Nenhum favorito ainda." : "Nenhum jogo encontrado."}</div>`;
-      mostrarDetalhe();
-      linhas.querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
-    }
-
-    function mostrarDetalhe() {
-      const j = lista.find((x) => x.arquivo === estadoDisco.selecionado);
-      if (!j) { detalhe.innerHTML = ""; return; }
-      const sel = linhas.querySelector('[aria-selected="true"]');
-      if (sel) tabela.setAttribute("aria-activedescendant", sel.id);
-      const controles = j.controles.split(";").map((c) => c.trim()).filter(Boolean);
-      const fav = favoritos().has(chaveJogo(id, j.arquivo));
-      detalhe.innerHTML = `
-        <div class="cd-detalhe-img">${j.imagem ? `<img src="${base(j.imagem)}" alt="">` : "sem imagem"}</div>
-        <div class="cd-detalhe-info">
-          <h3>${esc(j.nome)}</h3>
-          ${j.descricao ? `<p>${esc(j.descricao)}</p>` : ""}
-          ${controles.length ? `<h4>Controles</h4><ul>${controles.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
-          ${jogavel(j) ? `<a class="cd-jogar" href="${linkJogo(j)}">▶ JOGAR</a>`
-            : `<span class="cd-jogar desativado">${j.tipo === "windows" ? "Programa de Windows/DOS" : "Jogo Shockwave"}: não roda no navegador</span>`}
-          <div class="cd-detalhe-acoes"><button class="cd-bt" type="button" id="cd-fav">${fav ? "★ Favorito" : "☆ Favoritar"}</button></div>
-        </div>`;
-      detalhe.querySelector("#cd-fav").addEventListener("click", () => { alternarFavorito(chaveJogo(id, j.arquivo)); preencher(); });
-    }
-
-    function selecionar(i, abrir = false) {
-      const j = lista[i];
-      if (!j) return;
-      if (abrir || telaPequena()) { if (jogavel(j) || telaPequena()) location.hash = linkJogo(j); return; }
-      estadoDisco.selecionado = j.arquivo;
-      linhas.querySelectorAll(".cd-linha").forEach((l) => l.setAttribute("aria-selected", l.dataset.i === String(i)));
-      linhas.querySelector(`[data-i="${i}"]`)?.scrollIntoView({ block: "nearest" });
-      mostrarDetalhe();
-    }
-
-    linhas.addEventListener("click", (e) => { const l = e.target.closest(".cd-linha"); if (l) selecionar(+l.dataset.i); });
-    linhas.addEventListener("dblclick", (e) => { const l = e.target.closest(".cd-linha"); if (l) selecionar(+l.dataset.i, true); });
-    tabela.addEventListener("keydown", (e) => {
-      const i = lista.findIndex((j) => j.arquivo === estadoDisco.selecionado);
-      const passo = { ArrowDown: 1, ArrowUp: -1, PageDown: 15, PageUp: -15 }[e.key];
-      if (passo) { e.preventDefault(); selecionar(Math.max(0, Math.min(lista.length - 1, i + passo))); }
-      else if (e.key === "Home") { e.preventDefault(); selecionar(0); }
-      else if (e.key === "End") { e.preventDefault(); selecionar(lista.length - 1); }
-      else if (e.key === "Enter") { e.preventDefault(); selecionar(i, true); }
-    });
-    corpo.querySelector(".cd-pesquisa").addEventListener("submit", (e) => { e.preventDefault(); estadoDisco.busca = campo.value; preencher(); });
-    campo.addEventListener("input", () => { estadoDisco.busca = campo.value; preencher(); });
-    corpo.querySelector("#cd-todos").addEventListener("click", () => { campo.value = ""; Object.assign(estadoDisco, { busca: "", categoria: "todos" }); desenharLista(); });
-    corpo.querySelector("#cd-voltar").addEventListener("click", () => ir({ tela: "menu", busca: "" }));
-    off?.addEventListener("change", () => { estadoDisco.mostrarOff = off.checked; preencher(); });
-    preencher();
+        </a>`;
+    }).join("")
+      : `<div class="aviso">${estadoDisco.categoria === "favoritos" && !termo ? "Nenhum favorito ainda. Abra um jogo e toque em ☆ Favoritar para guardar aqui." : "Nenhum jogo encontrado."}</div>`;
   }
 
-  // barra de ferramentas
-  const q = app.querySelector("#cd-q");
-  app.querySelector(".cd-busca").addEventListener("submit", (e) => {
-    e.preventDefault();
-    ir({ tela: "lista", categoria: "todos", busca: q.value, selecionado: null });
+  abas.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-cat]");
+    if (!b) return;
+    estadoDisco.categoria = b.dataset.cat;
+    desenhar();
   });
-  app.querySelector("#bt-menu").addEventListener("click", () => ir({ tela: "menu", busca: "" }));
+  busca.addEventListener("input", () => { estadoDisco.busca = busca.value; desenhar(); });
+  off?.addEventListener("change", () => { estadoDisco.mostrarOff = off.checked; desenhar(); });
+  app.querySelector(".alternar").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-modo]");
+    if (!b) return;
+    modo = b.dataset.modo;
+    guardar.gravar("modo", modo);
+    desenhar();
+  });
+  app.querySelector("#bt-aleatorio").addEventListener("click", (e) => {
+    e.preventDefault();
+    const pool = estadoDisco.categoria !== "todos" && estadoDisco.categoria !== "favoritos"
+      ? jogaveis.filter((j) => j.categoriaId === estadoDisco.categoria) : jogaveis;
+    const j = pool[Math.floor(Math.random() * pool.length)];
+    if (j) location.hash = linkJogo(j);
+  });
   if (d.trilha) ligarTrilha(app.querySelector("#bt-trilha"), base(d.trilha));
   const btEstante = app.querySelector("#bt-estante");
   if (btEstante) {
-    const rotulo = () => (btEstante.textContent = minhaEstante().some((x) => x.item === d.item) ? "✓ Na minha estante (remover)" : "＋ Adicionar à minha estante");
+    const rotulo = () => (btEstante.textContent = minhaEstante().some((x) => x.item === d.item) ? "✓ Na minha estante" : "＋ Guardar na minha estante");
     btEstante.addEventListener("click", () => { alternarMinhaEstante(d); rotulo(); });
     rotulo();
   }
@@ -383,10 +313,9 @@ async function telaDisco(id) {
 }
 
 function ligarTrilha(botao, url) {
-  const rotulo = botao.querySelector(".rotulo") || botao;
   const atualizar = () => {
     const tocando = !trilha.paused && trilha.src === url;
-    rotulo.textContent = tocando ? "Desligar som" : "Ligar som";
+    botao.textContent = tocando ? "❚❚ Pausar trilha" : "♪ Trilha do menu";
     botao.setAttribute("aria-pressed", tocando);
   };
   botao.addEventListener("click", () => {
