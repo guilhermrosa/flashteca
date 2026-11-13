@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a1f"/>
+      <stop offset="1" stop-color="#f0245a"/>
+    </linearGradient>
+    <linearGradient id="disco" x1="0.1" y1="0.1" x2="0.9" y2="0.9">
+      <stop offset="0" stop-color="#f4f7ff"/>
+      <stop offset="0.45" stop-color="#d6cbff"/>
+      <stop offset="0.7" stop-color="#b6f2ff"/>
+      <stop offset="1" stop-color="#ffe2f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#fundo)"/>
+  <circle cx="32" cy="32" r="22.5" fill="url(#disco)"/>
+  <circle cx="32" cy="32" r="16" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.2"/>
+  <circle cx="32" cy="32" r="7.5" fill="#ffffff" fill-opacity=".85"/>
+  <circle cx="32" cy="32" r="3.4" fill="url(#fundo)"/>
+  <path d="M36.5 6.5 21 35h10.2L26.5 57.5 45 26.8H34.6z" fill="#ffd400" stroke="#2a0f1f" stroke-width="2.6" stroke-linejoin="round"/>
+</svg>
