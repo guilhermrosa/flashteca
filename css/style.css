@@ -11,8 +11,8 @@
   --linha: #e2ded5;
   --texto: #17151c;
   --texto-2: #625e6b;
-  --destaque: #f2551d;
-  --destaque-2: #e8245b;
+  --destaque: #6d28d9;
+  --destaque-2: #b4239e;
   --destaque-texto: #ffffff;
   --foco: #2f6bff;
   --sombra: 0 1px 2px rgba(23, 21, 28, .06), 0 8px 24px rgba(23, 21, 28, .06);
@@ -30,8 +30,8 @@
     --linha: #302d38;
     --texto: #f3f1ec;
     --texto-2: #a6a1b0;
-    --destaque: #ff6a2b;
-    --destaque-2: #ff3d6e;
+    --destaque: #b794ff;
+    --destaque-2: #c6ff3d;
     --foco: #7aa2ff;
     --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
     --sombra-forte: 0 2px 6px rgba(0, 0, 0, .35), 0 18px 40px rgba(0, 0, 0, .4);
@@ -65,7 +65,7 @@ h1, h2, h3 { font-family: var(--titulo); line-height: 1.15; text-wrap: balance; 
   border-bottom: 1px solid var(--linha);
 }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 700 21px var(--titulo); letter-spacing: -.02em; }
-.logo img { border-radius: 9px; box-shadow: 0 2px 8px rgba(240, 36, 90, .25); }
+.logo img { border-radius: 9px; box-shadow: 0 2px 10px rgba(106, 48, 224, .28); }
 .topo nav { display: flex; gap: 4px; background: var(--superficie-2); padding: 4px; border-radius: 999px; }
 .topo nav a { color: var(--texto-2); text-decoration: none; padding: 6px 14px; border-radius: 999px; font-weight: 500; font-size: 15px; }
 .topo nav a:hover { color: var(--texto); }
@@ -112,7 +112,9 @@ main { flex: 1; width: 100%; max-width: 1180px; margin: 0 auto; padding: 28px 16
 .carregando-disco { padding: 60px 0; text-align: center; font-size: 15px; }
 .carregando-disco::before {
   content: ""; display: block; width: 44px; height: 44px; margin: 0 auto 16px; border-radius: 50%;
-  background: url("../img/icone.svg") center / cover; animation: girar 1.4s linear infinite;
+  background: radial-gradient(circle, #1e0b4d 0 14%, #f3ffd6 15% 30%, transparent 31%),
+    conic-gradient(from 0deg, #c6ff3d, #8a4dff, #ffd6f5, #c6ff3d);
+  box-shadow: 0 0 0 2px #1e0b4d inset; animation: girar 1.2s linear infinite;
 }
 @keyframes girar { to { transform: rotate(360deg); } }
 .voltar { display: inline-flex; gap: 6px; margin-bottom: 16px; color: var(--texto-2); text-decoration: none; font-weight: 500; }
