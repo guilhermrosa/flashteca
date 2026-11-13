@@ -9,11 +9,12 @@
   <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121117" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="img/icone-16.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/icone.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <style>body { opacity: 0; }</style>
 </head>
 <body>
   <header class="topo">
@@ -24,6 +25,7 @@
     <nav>
       <a href="#/" data-nav="estante">Estante</a>
       <a href="#/explorar" data-nav="explorar">Explorar</a>
+      <button type="button" id="bt-instalar" hidden>Instalar app</button>
     </nav>
   </header>
 
@@ -36,6 +38,21 @@
   <audio id="trilha" loop preload="none"></audio>
 
   <script src="https://unpkg.com/@ruffle-rs/ruffle@0.7.1/ruffle.js"></script>
-  <script src="js/app.js" type="module"></script>
+  <script>
+    // O GitHub Pages deixa os arquivos em cache por 10 minutos. Antes de carregar o site, confere
+    // com o servidor se o CSS e o JS mudaram (consulta condicional: só baixa de novo o que mudou)
+    // e só então os carrega, já atualizados no cache do navegador.
+    (() => {
+      const arquivos = ["css/style.css", "js/app.js", "js/archive.js", "js/catalogo.js", "js/toque.js"];
+      const conferir = Promise.all(arquivos.map((a) => fetch(a, { cache: "no-cache" }).catch(() => {})));
+      const limite = new Promise((ok) => setTimeout(ok, 3000)); // rede ruim: não trava a página
+      Promise.race([conferir, limite]).then(() => {
+        const css = Object.assign(document.createElement("link"), { rel: "stylesheet", href: "css/style.css" });
+        css.onerror = () => (document.body.style.opacity = 1);
+        document.head.append(css);
+        document.body.append(Object.assign(document.createElement("script"), { type: "module", src: "js/app.js" }));
+      });
+    })();
+  </script>
 </body>
 </html>

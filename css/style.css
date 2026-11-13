@@ -319,3 +319,75 @@ main { flex: 1; width: 100%; max-width: 1180px; margin: 0 auto; padding: 28px 16
   .jogos.lista .cartao-img { width: 104px; }
   .jogos.lista .cartao-texto p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 }
+
+/* ---------- controles na tela (celular e tablet) ---------- */
+.palco-area { position: relative; }
+.palco-area:fullscreen { background: #000; display: flex; align-items: center; justify-content: center; }
+.palco-area:fullscreen .palco { width: 100%; max-height: 100vh; border-radius: 0; box-shadow: none; }
+.toque {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 4px 4px;
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.toque[hidden] { display: none; }
+.dpad {
+  position: relative; flex: none; width: 140px; height: 140px; border-radius: 50%;
+  background: var(--superficie); border: 1px solid var(--linha); box-shadow: var(--sombra); touch-action: none;
+}
+.dpad .seta { position: absolute; width: 0; height: 0; border: 13px solid transparent; opacity: .55; transition: opacity .08s; }
+.s-cima { left: calc(50% - 13px); top: 12px; border-bottom: 18px solid var(--texto) !important; border-top: 0 !important; }
+.s-baixo { left: calc(50% - 13px); bottom: 12px; border-top: 18px solid var(--texto) !important; border-bottom: 0 !important; }
+.s-esquerda { top: calc(50% - 13px); left: 12px; border-right: 18px solid var(--texto) !important; border-left: 0 !important; }
+.s-direita { top: calc(50% - 13px); right: 12px; border-left: 18px solid var(--texto) !important; border-right: 0 !important; }
+.dpad-centro { position: absolute; inset: 38%; border-radius: 50%; background: var(--superficie-2); }
+.dpad.em-cima .s-cima, .dpad.em-baixo .s-baixo, .dpad.em-esquerda .s-esquerda, .dpad.em-direita .s-direita { opacity: 1; }
+.toque-botoes { display: flex; flex-wrap: wrap-reverse; justify-content: flex-end; gap: 12px; max-width: 168px; }
+.toque-bt {
+  width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--linha);
+  background: var(--superficie); color: var(--texto); box-shadow: var(--sombra);
+  font: 600 14px var(--corpo); touch-action: none; transition: transform .06s, background .06s;
+}
+.toque-bt.apertado { transform: scale(.92); background: var(--destaque); border-color: var(--destaque); color: #fff; }
+
+/* deitado ou em tela cheia: controles transparentes por cima do jogo */
+@media (pointer: coarse) and (orientation: landscape) {
+  .palco-area.com-toque .toque { position: absolute; left: 0; right: 0; bottom: 0; }
+}
+.palco-area:fullscreen .toque { position: absolute; left: 0; right: 0; bottom: 0; }
+@media (pointer: coarse) and (orientation: landscape) {
+  .palco-area.com-toque .toque { padding: 16px 24px; pointer-events: none; }
+  .palco-area.com-toque .dpad, .palco-area.com-toque .toque-bt { pointer-events: auto; }
+  .palco-area.com-toque .dpad, .palco-area.com-toque .toque-bt { background: rgba(255, 255, 255, .2); border-color: rgba(255, 255, 255, .55); color: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, .35); text-shadow: 0 1px 3px rgba(0, 0, 0, .6); }
+  .palco-area.com-toque .dpad-centro { background: rgba(255, 255, 255, .12); }
+}
+.palco-area:fullscreen .toque { padding: 16px 24px; pointer-events: none; }
+.palco-area:fullscreen .dpad, .palco-area:fullscreen .toque-bt { pointer-events: auto; background: rgba(255, 255, 255, .2); border-color: rgba(255, 255, 255, .55); color: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, .35); text-shadow: 0 1px 3px rgba(0, 0, 0, .6); }
+.palco-area:fullscreen .dpad-centro { background: rgba(255, 255, 255, .12); }
+.palco-area:fullscreen .s-cima { border-bottom-color: #fff !important; }
+.palco-area:fullscreen .s-baixo { border-top-color: #fff !important; }
+.palco-area:fullscreen .s-esquerda { border-right-color: #fff !important; }
+.palco-area:fullscreen .s-direita { border-left-color: #fff !important; }
+@media (pointer: coarse) and (orientation: landscape) {
+  .palco-area.com-toque .s-cima { border-bottom-color: #fff !important; }
+  .palco-area.com-toque .s-baixo { border-top-color: #fff !important; }
+  .palco-area.com-toque .s-esquerda { border-right-color: #fff !important; }
+  .palco-area.com-toque .s-direita { border-left-color: #fff !important; }
+}
+
+/* a página só aparece com o CSS carregado (ver o carregador no index.html) */
+body { opacity: 1; transition: opacity .15s; }
+
+/* botão de instalar no topo */
+#bt-instalar { border: 0; border-radius: 999px; padding: 6px 14px; background: var(--destaque); color: #fff; font: 600 14px var(--corpo); cursor: pointer; }
+@media (prefers-color-scheme: dark) { #bt-instalar { color: #15131b; } }
+
+/* celular deitado: o jogo ocupa a altura toda da tela */
+@media (pointer: coarse) and (orientation: landscape) and (max-height: 560px) {
+  .topo { position: static; }
+  .tela-jogo .palco-area {
+    height: 100vh; height: 100dvh; margin: 0 -16px; background: #000;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tela-jogo { grid-template-columns: 1fr; }
+  .tela-jogo .palco { width: auto; height: 100%; max-width: 100%; max-height: none; border-radius: 0; box-shadow: none; }
+  .voltar { margin-bottom: 8px; }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a1fb8"/>
+      <stop offset="1" stop-color="#8a4dff"/>
+    </linearGradient>
+    <radialGradient id="disco" cx=".36" cy=".32" r=".8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".5" stop-color="#f3ffd6"/>
+      <stop offset="1" stop-color="#c6ff3d"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#fundo)"/>
+  <g transform="translate(6.399999999999999 6.399999999999999) scale(0.8)">
+  
+  <!-- lombadas na prateleira -->
+  <rect x="9.5" y="19" width="7" height="29" rx="1.8" fill="#fff6e5"/>
+  <rect x="9.5" y="24" width="7" height="3" fill="#c6ff3d"/>
+  <rect x="18.5" y="14" width="7" height="34" rx="1.8" fill="#ffd6f5"/>
+  <rect x="18.5" y="19" width="7" height="3" fill="#8a4dff" opacity=".55"/>
+  <rect x="27.5" y="21" width="7" height="27" rx="1.8" fill="#fff6e5"/>
+  <rect x="27.5" y="26" width="7" height="3" fill="#ff8fd8"/>
+  <!-- estojo puxado, mostrando o disco -->
+  <g transform="rotate(10 45 48)">
+    <rect x="35.5" y="15" width="19" height="33" rx="2.6" fill="#ffd6f5" stroke="#1e0b4d" stroke-width="1.6"/>
+    <circle cx="45" cy="31.5" r="8.4" fill="url(#disco)" stroke="#1e0b4d" stroke-width="1.8"/>
+    <circle cx="45" cy="31.5" r="5.1" fill="none" stroke="#ffffff" stroke-opacity=".75" stroke-width="1"/>
+    <circle cx="45" cy="31.5" r="2.2" fill="#1e0b4d"/>
+  </g>
+  <rect x="6.5" y="48" width="51" height="5" rx="2.5" fill="#1e0b4d"/>
+</g>
+</svg>

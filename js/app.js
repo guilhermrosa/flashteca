@@ -1,6 +1,7 @@
 // Flashteca — roteamento por hash, estante de discos, menu de disco, player e explorador do archive.org.
 import { carregarListagem, caminhoNoArchive, urlArquivo, buscarItens, metadadosItem, CONTEINERES } from "./archive.js";
 import { catalogoComCache, catalogoSalvo, detectarFormato, resolverPagina, acharNaImagem } from "./catalogo.js";
+import { analisarControles, CONTROLES_PADRAO, telaDeToque, montarControles } from "./toque.js";
 
 const app = document.getElementById("app");
 const trilha = document.getElementById("trilha");
@@ -353,6 +354,7 @@ async function telaJogoDisco(id, arquivo) {
     sub: j.categoria,
     descricao: j.descricao,
     controles,
+    textoControles: j.controles,
     url,
     chave,
     incompativel: alvo.tipo === "swf" ? null : alvo.tipo,
@@ -367,7 +369,10 @@ function telaPlayer(o) {
   app.replaceChildren(h(`
     <a class="voltar" href="${o.voltar.href}">← ${esc(o.voltar.texto)}</a>
     <section class="tela-jogo">
-      <div class="palco" id="palco"></div>
+      <div class="palco-area">
+        <div class="palco" id="palco"></div>
+        <div class="toque" hidden></div>
+      </div>
       <aside class="ficha">
         <p class="ficha-cat">${esc(o.sub || "")}</p>
         <h1>${esc(o.nome)}</h1>
@@ -375,6 +380,7 @@ function telaPlayer(o) {
         ${o.controles?.length ? `<h2>Controles</h2><ul class="controles">${o.controles.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
         <div class="acoes">
           <button class="botao botao-forte" id="bt-cheia" type="button">⛶ Tela cheia</button>
+          ${!o.incompativel && telaDeToque() ? `<button class="botao" id="bt-toque" type="button"></button>` : ""}
           <button class="botao" id="bt-fav" type="button" aria-pressed="${fav}">${fav ? "★ Favorito" : "☆ Favoritar"}</button>
           <button class="botao" id="bt-reiniciar" type="button">↻ Reiniciar</button>
           <a class="botao" href="${esc(o.url)}" download>Baixar arquivo</a>
@@ -383,7 +389,7 @@ function telaPlayer(o) {
           ${o.anterior ? `<a class="botao" href="${o.anterior}">← Anterior</a>` : ""}
           ${o.proximo ? `<a class="botao" href="${o.proximo}">Próximo →</a>` : ""}
         </div>
-        <p class="dica">Clique no jogo para ele receber o teclado. Se algo não funcionar, é limitação do emulador com aquele jogo específico.</p>
+        <p class="dica">${telaDeToque() ? "Toque no jogo uma vez antes de usar os controles na tela." : "Clique no jogo para ele receber o teclado."} Se algo não funcionar, é limitação do emulador com aquele jogo específico.</p>
       </aside>
     </section>
   `));
@@ -399,7 +405,30 @@ function telaPlayer(o) {
   } else {
     montarPlayer(palco, o.url);
   }
-  app.querySelector("#bt-cheia").addEventListener("click", () => telaCheia(palco));
+  const area = app.querySelector(".palco-area");
+  app.querySelector("#bt-cheia").addEventListener("click", () => telaCheia(area));
+  const deitado = matchMedia("(pointer: coarse) and (orientation: landscape)");
+  const focarJogo = () => { if (deitado.matches && area.isConnected) area.scrollIntoView({ block: "start" }); };
+  deitado.onchange = focarJogo;
+  setTimeout(focarJogo, 50);
+
+  // controles na tela (celular/tablet): ligados por padrão quando o jogo usa teclado
+  const btToque = app.querySelector("#bt-toque");
+  if (btToque) {
+    const analise = analisarControles(o.textoControles);
+    const caixa = app.querySelector(".toque");
+    montarControles(caixa, analise?.teclado ? analise : CONTROLES_PADRAO, () => playerAtual);
+    const prefs = guardar.ler("toque", {});
+    const ligado = () => prefs[o.chave] ?? !!analise?.teclado;
+    const atualizar = () => {
+      caixa.hidden = !ligado();
+      area.classList.toggle("com-toque", ligado());
+      btToque.textContent = ligado() ? "🎮 Ocultar controles" : "🎮 Controles na tela";
+      btToque.setAttribute("aria-pressed", ligado());
+    };
+    btToque.addEventListener("click", () => { prefs[o.chave] = !ligado(); guardar.gravar("toque", prefs); atualizar(); });
+    atualizar();
+  }
   app.querySelector("#bt-reiniciar").addEventListener("click", () => !o.incompativel && montarPlayer(palco, o.url));
   app.querySelector("#bt-fav").addEventListener("click", (e) => {
     const agora = alternarFavorito(o.chave);
@@ -576,3 +605,27 @@ async function rotear() {
 }
 window.addEventListener("hashchange", rotear);
 rotear();
+
+// ---------- app instalável (PWA) ----------
+// Quando uma versão nova assume, recarrega uma vez para ela aparecer; procura versão nova ao voltar ao app.
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+  const tinhaControle = !!navigator.serviceWorker.controller;
+  let recarregou = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (tinhaControle && !recarregou) { recarregou = true; location.reload(); }
+  });
+  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then((reg) => {
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) reg.update().catch(() => {}); });
+  }).catch(() => {});
+}
+// Botão "Instalar app": só aparece quando o navegador oferece a instalação (Chrome/Edge/Android).
+let pedidoInstalar = null;
+const btInstalar = document.getElementById("bt-instalar");
+addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); pedidoInstalar = e; btInstalar.hidden = false; });
+addEventListener("appinstalled", () => { btInstalar.hidden = true; pedidoInstalar = null; });
+btInstalar?.addEventListener("click", async () => {
+  if (!pedidoInstalar) return;
+  pedidoInstalar.prompt();
+  await pedidoInstalar.userChoice.catch(() => {});
+  pedidoInstalar = null; btInstalar.hidden = true;
+});

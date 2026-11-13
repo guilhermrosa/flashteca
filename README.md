@@ -19,6 +19,10 @@ consegue servir arquivos de dentro de imagens ISO/ZIP e libera CORS para isso.
 - **Explorar o Archive**: busque qualquer item de software do archive.org (ou cole o link) e a Flashteca
   lista os `.swf` dentro das imagens de disco para jogar.
 - Favoritos e "jogados recentemente" (guardados no navegador), busca sem acento, tela cheia.
+- **App instalável** (PWA): no Android, "Instalar app" no topo do site ou "Adicionar à tela inicial" no menu
+  do Chrome. Gira com o celular; deitado, o jogo ocupa a tela toda.
+- **Controles na tela** em celular e tablet: direcional e botões montados a partir da descrição de controles
+  de cada jogo no catálogo do CD (jogos só de toque/mouse não ganham controles); dá para ligar e desligar por jogo.
 
 ## Limitações
 
@@ -74,6 +78,10 @@ index.html          casca da página, carrega o Ruffle (unpkg) e o app
 js/app.js           rotas (#/, #/disco/…, #/explorar, #/item/…), telas e player
 js/archive.js       metadados, busca e listagem de imagens de disco no archive.org
 js/catalogo.js      leitura do menu original dos CDs (pasta XML/)
+js/toque.js         controles na tela para celular (direcional e botões que viram teclas no Ruffle)
+js/versao.js        versão do app instalado (nome do cache offline)
+sw.js               service worker: rede primeiro, cópia offline da interface
+manifest.webmanifest, icons/   app instalável
 css/style.css       visual
 data/discos.json    discos da estante do site
 scripts/            script usado pela Action de publicar disco
@@ -81,3 +89,10 @@ scripts/            script usado pela Action de publicar disco
 ```
 
 Os direitos dos jogos pertencem aos seus autores; este projeto apenas aponta para o acervo público do Internet Archive.
+
+## Atualizações e cache
+
+O GitHub Pages manda o navegador guardar os arquivos por 10 minutos. Para cada visita já pegar a versão
+nova, o `index.html` revalida o CSS e o JS antes de carregá-los, e o service worker busca na rede primeiro.
+Ao adicionar um arquivo novo que o site carrega, inclua-o na lista `BASE` do `sw.js` (e, se for CSS/JS da
+interface, na lista do carregador no `index.html`).
