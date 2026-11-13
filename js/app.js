@@ -10,7 +10,7 @@ const REPO = location.hostname.endsWith(".github.io")
   : "guilhermrosa/flashteca";
 
 let listaSite = null;
-const discosDoSite = () => (listaSite ??= fetch("data/discos.json").then((r) => r.json()).catch(() => []));
+const discosDoSite = () => (listaSite ??= fetch("data/discos.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => []));
 const cacheDiscos = new Map();
 
 // ---------- armazenamento local (favoritos e recentes) ----------
