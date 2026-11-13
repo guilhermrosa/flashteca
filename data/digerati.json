@@ -1,0 +1,3692 @@
+{
+ "id": "digerati",
+ "titulo": "Digerati Games — 450 Jogos em DVD",
+ "ano": 2007,
+ "item": "digerati-games-450-jogos-em-dvd-para-computador",
+ "iso": "Digerati Games - 450 Jogos em DVD.iso",
+ "capa": "Digerati Games - 450 Jogos em DVD (Foto).png",
+ "trilha": "Interface/trilha.mp3",
+ "revista": "Interface/revista/revista.pdf",
+ "categorias": [
+  {
+   "id": "acao",
+   "nome": "Ação",
+   "jogos": [
+    {
+     "nome": "A Tank Named Grizzly",
+     "descricao": "Ataque os inimigos nas ruas da cidade em guerra.",
+     "controles": "Teclado – Setas: Movimentam tanque; Espaço: Troca arma; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/a-tank-named-grizzly.swf",
+     "imagem": "Interface/Imagens/a-tank-named-grizzly.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Alios Army",
+     "descricao": "Não deixe que nenhum avião inimigo acerte você.",
+     "controles": "Mouse – Movimenta avião; Botão esquerdo: Atira.",
+     "arquivo": "Acao/alios-army.swf",
+     "imagem": "Interface/Imagens/alios-army.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Amoured assault",
+     "descricao": "Mate a tropa inimiga para que não chegue a sua base.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/amoured-assault.swf",
+     "imagem": "Interface/Imagens/amoured-assault.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Astro Series",
+     "descricao": "Recupere seus amigos que foram sequestrados por ET's.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/astroseries.swf",
+     "imagem": "Interface/Imagens/astroseries.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Attack of the Ferver Heads",
+     "descricao": "Ataque ou atropele os zumbis que querem te pegar.",
+     "controles": "Teclado – Setas: Movimentam carro; Espaço: Ataque.",
+     "arquivo": "Acao/attack-of-the-ferver-heads.swf",
+     "imagem": "Interface/Imagens/attack-of-the-ferver-heads.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Battle Buggy",
+     "descricao": "Atire nos equipamentos de seu inimigo.",
+     "controles": "Teclado – Setas: Movimentam tanque; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/battlebuggy.swf",
+     "imagem": "Interface/Imagens/battlebuggy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bubble Tanks 2",
+     "descricao": "Atire nas bolhas e quando exterminá-las pegue o que sobrou delas.",
+     "controles": "Teclado: W, A, S, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/bubble-tanks-2.swf",
+     "imagem": "Interface/Imagens/bubble-tanks-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "CoastGuard",
+     "descricao": "Atire nos barcos ilegais que tentam chegar a sua cidade.",
+     "controles": "Teclado – Setas: Movimentam barco; Espaço: Atira.",
+     "arquivo": "Acao/coastguard.swf",
+     "imagem": "Interface/Imagens/coastguard.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Combat Heaven",
+     "descricao": "Vá para a guerra com esse garoto muito corajoso.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/combatheaven.swf",
+     "imagem": "Interface/Imagens/combatheaven.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Demolition Derby",
+     "descricao": "Entre nesse campo de batalha e bata nos carros até eles explodirem.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Acao/demolition-derby.swf",
+     "imagem": "Interface/Imagens/demolition-derby.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dino Blitz",
+     "descricao": "Jogue o ovo nos blocos para passar as fases.",
+     "controles": "Mouse – Botão esquerdo: Atira.",
+     "arquivo": "Acao/dino_blitz.swf",
+     "imagem": "Interface/Imagens/dino_blitz.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Doctor Compactor",
+     "descricao": "Atire nos lixos que estão caindo do céu para se proteger.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/doctor-compactor.swf",
+     "imagem": "Interface/Imagens/doctor-compactor.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dragon Pants 2",
+     "descricao": "Acabe com todos os animais estranhos.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; CTRL: Atira.",
+     "arquivo": "Acao/dragonpants2.swf",
+     "imagem": "Interface/Imagens/dragonpants2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dragons Layer",
+     "descricao": "Atire nos dragões mágicos que querem destruir seu castelo.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/Dragonslayer.swf",
+     "imagem": "Interface/Imagens/Dragonslayer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Election Slap",
+     "descricao": "Dê vários tapas nos candidatos americanos.",
+     "controles": "Mouse – Botão esquerdo: Interagem com o jogo.",
+     "arquivo": "Acao/Election_Slap.swf",
+     "imagem": "Interface/Imagens/Election_Slap.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Funny Zoo",
+     "descricao": "Jogue as bolas nesse macaquinho esperto.",
+     "controles": "Mouse – Botão esquerdo: Atira.",
+     "arquivo": "Acao/funny-zoo.swf",
+     "imagem": "Interface/Imagens/funny-zoo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Grey Matter",
+     "descricao": "Leve sua bola até os inimigos e forme um triângulo para vencer.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Ataque.",
+     "arquivo": "Acao/grey-matter.swf",
+     "imagem": "Interface/Imagens/grey-matter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "GTA Urban Jihad",
+     "descricao": "Leve o carro - bomba até o local pretendido para atingir os objetivos.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Acao/gta-urban-jihad.swf",
+     "imagem": "Interface/Imagens/gta-urban-jihad.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "GunMaster on Slaught",
+     "descricao": "Atire em todos os soldados e aviões do inimigo para acabar com eles.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/gunmasteronslaught.swf",
+     "imagem": "Interface/Imagens/gunmasteronslaught.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Horizon of War",
+     "descricao": "Não deixe os soldados rivais chegarem até sua torre de controle.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/horizonofwar.swf",
+     "imagem": "Interface/Imagens/horizonofwar.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Iraq Attack",
+     "descricao": "Ataque os lugares nos quais os terroris ainda dominam.",
+     "controles": "Teclado – Steas: Movimentam helicóptero; \"A\": Atira; \"S\": Bomba.",
+     "arquivo": "Acao/iraq-attack.swf",
+     "imagem": "Interface/Imagens/iraq-attack.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "King of the Wind",
+     "descricao": "Não deixe animais atacarem seu castelo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/kingofthewind.swf",
+     "imagem": "Interface/Imagens/kingofthewind.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Kombat Fighters",
+     "descricao": "Escolha seu personagem clássico e detone os outros.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/kombatfighters.swf",
+     "imagem": "Interface/Imagens/kombatfighters.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Layer Cake",
+     "descricao": "Pegue todos os presentes da rua e fuja da polícia para vencer.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Acao/layer-cake.swf",
+     "imagem": "Interface/Imagens/layer-cake.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Luminara",
+     "descricao": "Atire nos quadrados e não deixe eles te pegarem.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/luminara.swf",
+     "imagem": "Interface/Imagens/luminara.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Matrix Bullet Time",
+     "descricao": "Você é o escolhido, agora deverá lutar contra os poderosos agentes no mundo de Matrix.",
+     "controles": "Teclado – Setas: Movimentam personagem; Seta baixo: Ataque; Espaço: Slowmotion Ultra; \"M\": Slowmotion; CTRL: Pega arma; Shift: Atira.",
+     "arquivo": "Acao/matrix-bullet-time.swf",
+     "imagem": "Interface/Imagens/matrix-bullet-time.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Matrix Rampage",
+     "descricao": "Controle Neo em uma terrível batalha contra os agentes.",
+     "controles": "Teclado – Setas: Movimentam o personagem; A;S: Interagem com o jogo.",
+     "arquivo": "Acao/MatrixRampage.swf",
+     "imagem": "Interface/Imagens/MatrixRampage.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Military MonsterTruck",
+     "descricao": "Complete as missões no tempo mais curto que conseguir.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Acao/military-monstertruck.swf",
+     "imagem": "Interface/Imagens/military-monstertruck.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mr. Hammer",
+     "descricao": "Coloque bastante força para dar uma forte martelada.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/mr-hammer.swf",
+     "imagem": "Interface/Imagens/mr-hammer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Naked Melee",
+     "descricao": "Crie os lutadores o mais rápido que conseguir e em grande número para vencer a batalha.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/naked-melee.swf",
+     "imagem": "Interface/Imagens/naked-melee.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "New York Defender",
+     "descricao": "Defenda as duas torres gêmeas de ataques terroristas.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/new-york-defender.swf",
+     "imagem": "Interface/Imagens/new-york-defender.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "PacMam Fight",
+     "descricao": "Ajude o PacMan a se livrar das mais loucas aventuras.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Acao/pacman-fight.swf",
+     "imagem": "Interface/Imagens/pacman-fight.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "PacMan Killer",
+     "descricao": "Elimine o maior número de PacMan's que conseguir para passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Acao/pacman-killer.swf",
+     "imagem": "Interface/Imagens/pacman-killer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Panda Wars",
+     "descricao": "Ajude esse lindo urso panda a acabar com estranhos seres que invadiram a Terra.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; 1; 2; 3: Troca arma; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/panda-wars.swf",
+     "imagem": "Interface/Imagens/panda-wars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pirate Race",
+     "descricao": "Atire nos piratas inimigos para afundá-los e achar o tesouro.",
+     "controles": "Teclado – Setas: Movimentam barco; Espaço: Atira.",
+     "arquivo": "Acao/pirate-race.swf",
+     "imagem": "Interface/Imagens/pirate-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rainbow Blitz",
+     "descricao": "Acerte as bombas e mude a paisagem de guerra para um belo arco-íris.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/rainbow-blitz.swf",
+     "imagem": "Interface/Imagens/rainbow-blitz.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Red Code",
+     "descricao": "Acabe com esses insetos mutantes que te ameaçam.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/redcode.swf",
+     "imagem": "Interface/Imagens/redcode.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rescue Mission",
+     "descricao": "Ajude o garoto a resgatar seus colegas de sala.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/rescue_mission.swf",
+     "imagem": "Interface/Imagens/rescue_mission.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Run Soldier Run",
+     "descricao": "Ajude esses corajosos soldados a correrem pelo campo batalha.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Acao/run-soldier-run.swf",
+     "imagem": "Interface/Imagens/run-soldier-run.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sapatadas",
+     "descricao": "Faça o que o jornalista não conseguiu, acerte o sapato no Bush.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/sapatadas.swf",
+     "imagem": "Interface/Imagens/sapatadas.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sixty",
+     "descricao": "Acabe com os quadrados estranhos para passar as fases.",
+     "controles": "Teclado – Setas/W, A, S, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/sixty.swf",
+     "imagem": "Interface/Imagens/sixty.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sky Warrior",
+     "descricao": "Atire nas bases inimigas para acabar com eles.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/skywarrior.swf",
+     "imagem": "Interface/Imagens/skywarrior.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "SpeedX",
+     "descricao": "Acabe com toda a artilharia do inimigo para derrotá-lo na guerra.",
+     "controles": "Teclado – W, A, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/speedx.swf",
+     "imagem": "Interface/Imagens/speedx.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Star Wars",
+     "descricao": "Ataque os personagens do Star Wars com sua espada de Gedai.",
+     "controles": "Mouse – Interage com o jogo; Botão esquerdo: Ataque.",
+     "arquivo": "Acao/star-wars.swf",
+     "imagem": "Interface/Imagens/star-wars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Straw Hat Samurai",
+     "descricao": "Acabe com tudo ao seu redor.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/straw-hat-samurai.swf",
+     "imagem": "Interface/Imagens/straw-hat-samurai.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Super Tank",
+     "descricao": "Complete as missões com seu tanque de guerra.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Acao/super-tank.swf",
+     "imagem": "Interface/Imagens/super-tank.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tech Wars",
+     "descricao": "Acabe com as bolas radioativas para sobreviver e passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/Tech_Wars.swf",
+     "imagem": "Interface/Imagens/Tech_Wars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Great Raccon Escape",
+     "descricao": "Termine as missões com esse bichinho que se transforma em várias outras coisas.",
+     "controles": "Teclado – Setas/W, A, S, D: Movimentam personagem; Y, U, I, O, P/1, 2, 3, 4, 5: Interage com o jogo.",
+     "arquivo": "Acao/TheGreatRacconEscape.swf",
+     "imagem": "Interface/Imagens/TheGreatRacconEscape.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Last Fight",
+     "descricao": "Acabe com todos os andróides que te colocam em perigo.",
+     "controles": "Teclado – Setas: Movimentas personagem; \"Z\": Ataque; \"X\": Pula.",
+     "arquivo": "Acao/TheLastFight.swf",
+     "imagem": "Interface/Imagens/TheLastFight.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The League",
+     "descricao": "Atire nos personagens maléficos da Liga Extraordinária.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Acao/the-league.swf",
+     "imagem": "Interface/Imagens/the-league.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Toon Crisis",
+     "descricao": "Atire laser com o dedo nesse estranhos diabinhos.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/Toon_Crisis.swf",
+     "imagem": "Interface/Imagens/Toon_Crisis.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Turt Trooper",
+     "descricao": "Pule do avião e acabe com os jacarés que tentam te acertar.",
+     "controles": "Teclado – W, A, S, D: Movimentam persoanagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/turt_trooper.swf",
+     "imagem": "Interface/Imagens/turt_trooper.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Vaca e o Frango",
+     "descricao": "Jogue seu adversário nas cataratas nessa batalha muito divertida.",
+     "controles": "Teclado – Setas: Roda personagem; Espaço: Corre.",
+     "arquivo": "Acao/vaca-e-o-frango.swf",
+     "imagem": "Interface/Imagens/vaca-e-o-frango.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "WarFare Transporter",
+     "descricao": "Jogue bombas nos submarinos que tentam te atacar pelo fundo do mar.",
+     "controles": "Mouse – Movimenta barco; Botão esquerdo: Atira bomba.",
+     "arquivo": "Acao/warfare-transporter.swf",
+     "imagem": "Interface/Imagens/warfare-transporter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "X Tract Paper Clip",
+     "descricao": "Acabe com aqueles assistentes chatos do word.",
+     "controles": "Mouse – Movimenta mão; Botão esquerdo: Joga elástico.",
+     "arquivo": "Acao/x-tract-paperclip.swf",
+     "imagem": "Interface/Imagens/x-tract-paperclip.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Zombie Run",
+     "descricao": "Fuja dos zumbis que estão atrás de você, pegue as pedras para conseguir se salvar.",
+     "controles": "Teclado – Setas: Controlam o personagem.",
+     "arquivo": "Acao/zombierun.swf",
+     "imagem": "Interface/Imagens/zombierun.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Zombie Storm",
+     "descricao": "Atire nas pessoas inimigas da sua vila.",
+     "controles": "Teclado – Setas/W, A, S, D: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Acao/zombie-storm.swf",
+     "imagem": "Interface/Imagens/zombie-storm.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "aventura",
+   "nome": "Aventura",
+   "jogos": [
+    {
+     "nome": "Adventures blob Bob",
+     "descricao": "Nosso amigo foi sugado para um outro universo, ajude-o a desvendar todos os estranhos mistérios desse novo mundo.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/adventures-blob-bob.swf",
+     "imagem": "Interface/Imagens/adventures-blob-bob.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Angry Old Wizard",
+     "descricao": "Um diferente mundo mágico está em perigo, acabe com todos os monstros que querem destruir o mundo.",
+     "controles": "Teclado – Setas: Movimentam o personagem; A: Salta; S: Ataca.",
+     "arquivo": "Aventura/angry-old-wizard.swf",
+     "imagem": "Interface/Imagens/angry-old-wizard.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "AsterBlaster",
+     "descricao": "Atire nas construções e nas naves para não bater.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Atira.",
+     "arquivo": "Aventura/asterblaster.swf",
+     "imagem": "Interface/Imagens/asterblaster.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Batho Sphere",
+     "descricao": "Ajude os Rugrats a descobrirem todas as maravilhas que existem no oceano.",
+     "controles": "Teclado – Setas: Movimentam o submarino.",
+     "arquivo": "Aventura/batho-sphere.swf",
+     "imagem": "Interface/Imagens/batho-sphere.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Big Truck Adventures",
+     "descricao": "Transporte vários tipos de objetos, tome cuidado para não derrubá-los e nem perder o tempo.",
+     "controles": "Teclado – Setas: Movimentam o caminhão; Shift: Turbo; Z: Freia.",
+     "arquivo": "Aventura/big-truck-adventures.swf",
+     "imagem": "Interface/Imagens/big-truck-adventures.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bowser Ball",
+     "descricao": "Tente fugir das bolas que o vilão Bowser joga no Mário.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Aventura/bowserball.swf",
+     "imagem": "Interface/Imagens/bowserball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cable Capers",
+     "descricao": "Esse incrível encanador entrou no esgoto de uma grande cidade e encontrou uma terrível surpresa.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Z: Salta; X: Ataca.",
+     "arquivo": "Aventura/cable-capers.swf",
+     "imagem": "Interface/Imagens/cable-capers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Canyon Run",
+     "descricao": "Acelere fundo em cada nível e tente completar os percursos com rapidez.",
+     "controles": "Teclado – Setas: Movimentam o caminhão; Shift: Turbo.",
+     "arquivo": "Aventura/canyon-run.swf",
+     "imagem": "Interface/Imagens/canyon-run.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cave Escaper",
+     "descricao": "Ajude esse corajoso aventureiro a explorar uma misteriosa caverna cheia de perigos.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/cave_escaper.swf",
+     "imagem": "Interface/Imagens/cave_escaper.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Clock Crew",
+     "descricao": "Ajude esse super morango e passar por todos os difíceis inimigos.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Aventura/clock-crew.swf",
+     "imagem": "Interface/Imagens/clock-crew.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Co-operation",
+     "descricao": "A chave para o sucesso de um missão e a cooperação entre os membros, exercite essa ótima ação nesse incrível jogo.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/co-operation.swf",
+     "imagem": "Interface/Imagens/co-operation.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cosmic Rush",
+     "descricao": "Pegue as moedas e pule todos os perigos das telas.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Aventura/cosmicrush.swf",
+     "imagem": "Interface/Imagens/cosmicrush.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Crab Wars",
+     "descricao": "Ajude esse caranguejo em uma estranha batalha, arrase com todas as aranhas que estão tentando levá-lo.",
+     "controles": "Mouse – Movimentam o personagem; Teclado – W, A, S, D: Interagem com o jogo.",
+     "arquivo": "Aventura/CrabWars.swf",
+     "imagem": "Interface/Imagens/CrabWars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dare Devil II",
+     "descricao": "Ganhe os desafios de salto com sua super moto.",
+     "controles": "Teclado – Setas: Movimentam personagem; CTRL: Compra.",
+     "arquivo": "Aventura/daredevilii.swf",
+     "imagem": "Interface/Imagens/daredevilii.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Elemigrante",
+     "descricao": "Fuja dos policiais que te perseguem na fronteira.",
+     "controles": "Mouse – Movimenta personagem.",
+     "arquivo": "Aventura/elemigrante.swf",
+     "imagem": "Interface/Imagens/elemigrante.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Go",
+     "descricao": "Ajude nosso amigo a passar por todas as bombas, salte entre elas para conseguir sair inteiro.",
+     "controles": "Teclado – Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/go.swf",
+     "imagem": "Interface/Imagens/go.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gravity",
+     "descricao": "Cumpra as missões em cada nível para conseguir avançar no game.",
+     "controles": "Teclado – Setas: movimentam a nave.",
+     "arquivo": "Aventura/gravity.swf",
+     "imagem": "Interface/Imagens/gravity.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hunted Forever",
+     "descricao": "Corra o mais rápido que puder e veja se conseguir fugir desse imenso robô que te persegue.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/hunted-forever.swf",
+     "imagem": "Interface/Imagens/hunted-forever.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Indiana Bones",
+     "descricao": "Ajude Indiana Jones a pegar as pílulas verdes para viver melhor.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Aventura/indianabones.swf",
+     "imagem": "Interface/Imagens/indianabones.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "James the Space Zebra",
+     "descricao": "Explore toda a imensidão do espaço com sua nova amiga listrada.",
+     "controles": "Teclado – Setas: Movimentam a personagem.",
+     "arquivo": "Aventura/james-the-space-zebr.swf",
+     "imagem": "Interface/Imagens/james-the-space-zebr.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Katapult",
+     "descricao": "Tente dar a volta ao mundo depois de ser lançado de uma catapulta.",
+     "controles": "Teclado – Setas e Espaço: Interagem com o jogo.",
+     "arquivo": "Aventura/katapult.swf",
+     "imagem": "Interface/Imagens/katapult.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Koala Lander",
+     "descricao": "Controle o balão e ajude o coala a pegar todos os camarões.",
+     "controles": "Teclado – Setas: Controlam o balão.",
+     "arquivo": "Aventura/koala-lander.swf",
+     "imagem": "Interface/Imagens/koala-lander.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "London Bus",
+     "descricao": "Pilote esse ônibus na cidade de Londres, mas tome muito cuidado.",
+     "controles": "Teclado – Setas: Movimentam ônibus.",
+     "arquivo": "Aventura/londonbus.swf",
+     "imagem": "Interface/Imagens/londonbus.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "luber joe",
+     "descricao": "Nade contra a correnteza e tente pegar todos os itens para ganhar muitos pontos.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/luberjoe.swf",
+     "imagem": "Interface/Imagens/luberjoe.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mario Lost in Space",
+     "descricao": "Ajude Mario a encontrar um local seguro para pousar com seu foguete.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/mariolostinspace.swf",
+     "imagem": "Interface/Imagens/mariolostinspace.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Microbe Kombat",
+     "descricao": "Veja como o mundo dos micróbios é feroz, fique maior que seu inimigos para conseguir devora-lo.",
+     "controles": "Mouse – Movimenta o personagem; Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Aventura/Microbe_Kombat.swf",
+     "imagem": "Interface/Imagens/Microbe_Kombat.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mini Scraper Caper",
+     "descricao": "Suba pela construção e vá recolhendo toda a comida que você encontrar.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/mini-scraper-caper.swf",
+     "imagem": "Interface/Imagens/mini-scraper-caper.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mission at Dawn",
+     "descricao": "Um navio está naufragando, ajude todas as pessoas que caíram no mar antes que elas se afoguem.",
+     "controles": "Teclado – Setas: Movimentam o helicóptero; Espaço: lança a boia. Obs.: Para que o game funcione corretamente; instale o Shockwave Player que se encontra na categoria ESSENCIAIS do CD. Ao iniciar o jogo pela primeira vez; é necessário estar conectado à Internet para atualizá-lo. O game roda somente no navegador Internet Explorer; ativando os recursos do \"ActiveX\" do seu navegador.",
+     "arquivo": "Aventura/mission-at-dawn/game.dcr",
+     "imagem": "Interface/Imagens/mission-at-dawn.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Naruto - Battle for Left Village",
+     "descricao": "Ajude Naruto a proteger toda a vila de Konoha do terrível ataque de Gaara.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Ataca; X: Ataque especial.",
+     "arquivo": "Aventura/Naruto/naruto3.swf",
+     "imagem": "Interface/Imagens/naruto.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Orbita",
+     "descricao": "Explore esse estranho mundo e tente resolver todos os enigmas que te esperam.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Aventura/orbita.swf",
+     "imagem": "Interface/Imagens/orbita.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Output",
+     "descricao": "Ajude o estranho personagem a completar todos os níveis com a ajuda desse estranho poder.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Aventura/output.swf",
+     "imagem": "Interface/Imagens/output.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pacman Plataform 2",
+     "descricao": "Ajude nosso estranho amigo amarelo a passar por todos esses terríveis fantasmas.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/pacman-plataform-2.swf",
+     "imagem": "Interface/Imagens/pacman-plataform-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pelican Lost",
+     "descricao": "Voe por cima dos carros e tente acerta-los com sua incrível técnica.",
+     "controles": "Teclado – Setas: Controlam o personagem; Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/pelican-lost.swf",
+     "imagem": "Interface/Imagens/pelican-lost.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Planet Platformer 2",
+     "descricao": "Pegue todas as estrelas perdidas nesse planeta distante.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Aventura/planetplatformer2.swf",
+     "imagem": "Interface/Imagens/planetplatformer2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Polar Rescue",
+     "descricao": "Vá ao resgate de seus amigos pingüins que foram aprisionados.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Salta; Shift: Ataca.",
+     "arquivo": "Aventura/Polar_Rescue.swf",
+     "imagem": "Interface/Imagens/Polar_Rescue.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pre-historic",
+     "descricao": "Ajude nosso amigo das cavernas a ganhar muitos pontos neste divertido jogo.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/prehistoric.swf",
+     "imagem": "Interface/Imagens/prehistoric.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Prince of War 2",
+     "descricao": "Coloque seus soldados na linha de batalha na hora certa para vencer os adversários.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: ataca; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Aventura/princeofwar2.swf",
+     "imagem": "Interface/Imagens/princeofwar2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pumpkin",
+     "descricao": "Ajude esta estranha bruxinha a passar por todas esse terrores.",
+     "controles": "Mouse – Movimentam a bruxa; botão esquerdo: atira.",
+     "arquivo": "Aventura/pumpkin.swf",
+     "imagem": "Interface/Imagens/pumpkin.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rat Wheel",
+     "descricao": "Veja tudo o que este ratinho consegue fazer em quanto corre em sua roda.",
+     "controles": "Teclado – Espaço: Interage com o jogo; 1 ao 6: Saltam.",
+     "arquivo": "Aventura/rat-wheel.swf",
+     "imagem": "Interface/Imagens/rat-wheel.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Resgate",
+     "descricao": "Ajude no resgate de todos os gatinho que ficaram presos no lugares mais estranhos possíveis.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Aventura/resgate.swf",
+     "imagem": "Interface/Imagens/resgate.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rest Zone",
+     "descricao": "Leve o pequeno ninja até a saída desse labirinto.",
+     "controles": "Mouse – Movimenta personagem.",
+     "arquivo": "Aventura/rest-zone.swf",
+     "imagem": "Interface/Imagens/rest-zone.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Robo Pogo",
+     "descricao": "Tente manter o equilíbrio do robô para conseguir passar de nível.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Aventura/robopogo.swf",
+     "imagem": "Interface/Imagens/robopogo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rocket MX",
+     "descricao": "Faça manobras muito loucas com esse garoto que não tem medo de nada.",
+     "controles": "Teclado – Setas: Manobras; Espaço: Acelera.",
+     "arquivo": "Aventura/rocket-mx.swf",
+     "imagem": "Interface/Imagens/rocket-mx.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rudolph",
+     "descricao": "Pegue todos os presentes que aparecem na tela, tome cuidado com o gelo que está caindo.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/rudolph.swf",
+     "imagem": "Interface/Imagens/rudolph.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Santastic Santa",
+     "descricao": "Passe por todas as dificuldades e tente salvar o natal.",
+     "controles": "Teclado – Setas: Movimentam o personagem; A: Interage com o jogo; S: Salta",
+     "arquivo": "Aventura/santastic-santa.swf",
+     "imagem": "Interface/Imagens/santastic-santa.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Scooby Doo 2",
+     "descricao": "Salsicha e Scooby estão em outro caso e precisam de sua ajuda para soluciona-lo.",
+     "controles": "Teclado – Setas: Movimentam o veículo.",
+     "arquivo": "Aventura/scooby-doo-2-monsters.swf",
+     "imagem": "Interface/Imagens/scooby-doo-2-monsters.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Scooby Soo Pirate Ship",
+     "descricao": "Tente resolver todo o mistério sem que Salsicha e Cauby fiquem apavorados.",
+     "controles": "Teclado - Setas: Movimentam personagem, Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/scoobydoopirateshipoffools.swf",
+     "imagem": "Interface/Imagens/scoobydoopirateshipoffools.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sky Locopter",
+     "descricao": "Movimente o helicóptero pelo mapa e tente pegar a chave para abrir o tesouro.",
+     "controles": "Teclado – Setas: Controlam o helicóptero; Espaço: bomba.",
+     "arquivo": "Aventura/skylocopter.swf",
+     "imagem": "Interface/Imagens/skylocopter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sled Launch",
+     "descricao": "Arremesse o trenó muito longe para ajudar os duendes.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Aventura/Sled_Launch.swf",
+     "imagem": "Interface/Imagens/Sled_Launch.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sling Shot Santa",
+     "descricao": "Atire o Noel de uma catapulta e veja até onde ele chega.",
+     "controles": "Mouse – botão esquerdo: Interage com o jogo.",
+     "arquivo": "Aventura/slingshot-santa.swf",
+     "imagem": "Interface/Imagens/slingshot-santa.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Snack Dash",
+     "descricao": "Coma apenas os alimentos saudáveis da tela.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula; A, S: Exercício.",
+     "arquivo": "Aventura/snack-dash.swf",
+     "imagem": "Interface/Imagens/snack-dash.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sonic",
+     "descricao": "Ajude Sonic a deter os terríveis planos do Robotnik.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/sonic.swf",
+     "imagem": "Interface/Imagens/sonic.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Squareman",
+     "descricao": "Ajude nosso estranho herói a salvar seu mundo.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/squareman.swf",
+     "imagem": "Interface/Imagens/squareman.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Super Robot Advance",
+     "descricao": "Viaje pelo universo e destrua todas as naves inimigas.",
+     "controles": "Teclado – Setas: Movimentam o personagem; B, N: Atiram; Espaço: Especial.",
+     "arquivo": "Aventura/super-robot-advance.swf",
+     "imagem": "Interface/Imagens/super-robot-advance.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tails Nightmare",
+     "descricao": "Explore esse misterioso mundo com a ajuda desse incrível personagem.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Z: Salta.",
+     "arquivo": "Aventura/tailsnightmare.swf",
+     "imagem": "Interface/Imagens/tailsnightmare.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "TankOper",
+     "descricao": "Passe pelos obstáculos com seu tanque voador.",
+     "controles": "Mouse – Botão esquerdo: Sobe.",
+     "arquivo": "Aventura/tankoper.swf",
+     "imagem": "Interface/Imagens/tankoper.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "tenta Drill",
+     "descricao": "Explore as profundezas do oceano tomando muito cuidado com os perigosos monstros que estão por lá.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Z: Atira.",
+     "arquivo": "Aventura/tentadrill.swf",
+     "imagem": "Interface/Imagens/tentadrill.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Amazing Spiderman",
+     "descricao": "Ajude o Homem Aranha a recolher todas suas preciosas roupas que estão espalhadas pela cidade.",
+     "controles": "Mouse – botão esquerdo: Interage com o jogo.",
+     "arquivo": "Aventura/the_amazing_spiderman.swf",
+     "imagem": "Interface/Imagens/the_amazing_spiderman.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Paratrooper",
+     "descricao": "Ajude o pára-quedista a passar por todas as dificuldades e pousar em segurança no navio.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/the-paratrooper.swf",
+     "imagem": "Interface/Imagens/the-paratrooper.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Race",
+     "descricao": "Passe pelos obstáculos, tome cuidado para igualar a cor do personagem com a cor o obstáculos antes de passa-lo.",
+     "controles": "Teclado – Setas: Interagem com o jogo; A, S, D, F: Controlam as cores.",
+     "arquivo": "Aventura/therace.swf",
+     "imagem": "Interface/Imagens/therace.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "To Suta",
+     "descricao": "Destrua todos os inimigos em uma batalha bem maluca.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Atira; Shift: Especial.",
+     "arquivo": "Aventura/to-suta.swf",
+     "imagem": "Interface/Imagens/to-suta.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Toast of War",
+     "descricao": "Ajude essa corajosa torradinha a passar por todas as dificuldades desse estranho mundo.",
+     "controles": "Teclado – Setas: Movimetam o personagem; A: Ataca; S: Salta; Espaço: Interage com o jogo.",
+     "arquivo": "Aventura/toast-of-war.swf",
+     "imagem": "Interface/Imagens/toast-of-war.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Toy Car",
+     "descricao": "Entre no seu carrão e passe por todas as plataformas para ganhar.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Aventura/toycar.swf",
+     "imagem": "Interface/Imagens/toycar.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Transmigration",
+     "descricao": "Este robô tem uma incrível habilidade de se transformar em animais, veja suas transformações a cada nível.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: ataca.",
+     "arquivo": "Aventura/transmigration.swf",
+     "imagem": "Interface/Imagens/transmigration.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Two Wheeler Trauma",
+     "descricao": "Seja habilidoso no trânsito para conseguir passar entre os carros sem bater.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/two-wheeler-trauma.swf",
+     "imagem": "Interface/Imagens/two-wheeler-trauma.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Two Wheeler Trauma II",
+     "descricao": "Seja habilidoso no trânsito para conseguir passar entre os carros sem bater em nenhum.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Aventura/two-wheeler-trauma-II.swf",
+     "imagem": "Interface/Imagens/two-wheeler-trauma-II.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wonder Boy",
+     "descricao": "Pegue as chaves que estão nas plataformas para abrir a porta e passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Aventura/wonderboy.swf",
+     "imagem": "Interface/Imagens/wonderboy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wrap Attack",
+     "descricao": "Ajude o duende a resgatar todos os presentes de natal.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Z, X: Interagem com o jogo.",
+     "arquivo": "Aventura/wrap-attack.swf",
+     "imagem": "Interface/Imagens/wrap-attack.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Year of the Snake",
+     "descricao": "Tente salvar seu vilarejo desse horrível monstro que quer destruir tudo.",
+     "controles": "Teclado – Setas: Movimentam o personagem; A, S: Interagem com o jogo.",
+     "arquivo": "Aventura/year-of-the-snake.swf",
+     "imagem": "Interface/Imagens/year-of-the-snake.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "corrida",
+   "nome": "Corrida",
+   "jogos": [
+    {
+     "nome": "230 Stef",
+     "descricao": "Você está em grande velocidade, mude de faixa para passar os mais lentos e não bata.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/230-stef.swf",
+     "imagem": "Interface/Imagens/230-stef.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "24 Hours Rally",
+     "descricao": "Desvie dos carros mais lentos que estão na sua faixa.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/24-hours-rally.swf",
+     "imagem": "Interface/Imagens/24-hours-rally.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "3D Motorcycle Racing",
+     "descricao": "Escolha sua moto e vença as provas de corrida.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/3d-motorcycle-racing.swf",
+     "imagem": "Interface/Imagens/3d-motorcycle-racing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "3D Race",
+     "descricao": "Corra em vários circuitos no mundo.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/3drace.swf",
+     "imagem": "Interface/Imagens/3drace.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "3D Racing Craze",
+     "descricao": "Corra com o carro pelas ruas da cidade.",
+     "controles": "Teclado – Setas: Movimentam carro; Shift: Turbo.",
+     "arquivo": "Corrida/3dracingcraze.swf",
+     "imagem": "Interface/Imagens/3dracingcraze.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "5 Mile 2 Go",
+     "descricao": "Desvie dos carros quando for ultrapassar, mas se tiver entre os últimos pegue a menor quantidade de vento.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/5-mile-2-go.swf",
+     "imagem": "Interface/Imagens/5-mile-2-go.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Animal Racers",
+     "descricao": "Escolha seu animalzinho e vá para a pista.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Corrida/animal-racers.swf",
+     "imagem": "Interface/Imagens/animal-racers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bike Race",
+     "descricao": "Pegue sua motoca e vá correr na pista.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/bike-race.swf",
+     "imagem": "Interface/Imagens/bike-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "By the River",
+     "descricao": "Desvie dos barcos mais lentos que o seu.",
+     "controles": "Teclado – \"W\": Sobe; \"S\": Desce.",
+     "arquivo": "Corrida/by-the-river.swf",
+     "imagem": "Interface/Imagens/by-the-river.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Course Des Pros",
+     "descricao": "Escolha seu possante e mostre suas habilidades na pista.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/course-des-pros.swf",
+     "imagem": "Interface/Imagens/course-des-pros.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Crazy Loop",
+     "descricao": "Corra na pista, mas cuidado com a faixa de pedestres.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/crazy-loop.swf",
+     "imagem": "Interface/Imagens/crazy-loop.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dirt Drift Racing",
+     "descricao": "Escolha seu carro e vá para a corrida em várias pistas.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/dirt_drift_racing.swf",
+     "imagem": "Interface/Imagens/dirt_drift_racing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Drag Race Demon",
+     "descricao": "\"Pimp\" seu carro e ganhe todas as provas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Corrida/drag-race-demon.swf",
+     "imagem": "Interface/Imagens/drag-race-demon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Drift Battle",
+     "descricao": "Dispute provas por trechos e vá mudando seu carro.",
+     "controles": "Teclado – A; S: Controlam carro; G: Acelera; F: Freia.",
+     "arquivo": "Corrida/drift-battle.swf",
+     "imagem": "Interface/Imagens/drift-battle.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Drifting",
+     "descricao": "Treine bastante para depois participar de torneios.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/drifting.swf",
+     "imagem": "Interface/Imagens/drifting.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Drivin Go'n Ice",
+     "descricao": "Tente andar de carro na neve.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/drivin-gonice.swf",
+     "imagem": "Interface/Imagens/drivin-gonice.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Drunk Driver",
+     "descricao": "Tente controlar o carro depois de ter bebido algumas doses.",
+     "controles": "Mouse – Botão esquerdo: Movimenta carro.",
+     "arquivo": "Corrida/drunkdriver.swf",
+     "imagem": "Interface/Imagens/drunkdriver.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Flash Sprint",
+     "descricao": "Controle esse carrinho de controle remoto.",
+     "controles": "Teclado – Setas: Movimentam carro; \"A\": Acelera.",
+     "arquivo": "Corrida/flash-sprint.swf",
+     "imagem": "Interface/Imagens/flash-sprint.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Formula One Race",
+     "descricao": "Entre nessa super corrida de fórmula 1, lembre-se do abastecimento.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/formula-one-race.swf",
+     "imagem": "Interface/Imagens/formula-one-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Formula Racing 3009",
+     "descricao": "Participe de corridas de fórmula 1 nos circuitos mais famosos do mundo.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/FormulaRacing3009.swf",
+     "imagem": "Interface/Imagens/FormulaRacing3009.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fox",
+     "descricao": "Desvie das moscas com seu carro Fox.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/fox.swf",
+     "imagem": "Interface/Imagens/fox.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "FRC",
+     "descricao": "Escolha seu carro e detone nas pistas do mundo.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/frc.swf",
+     "imagem": "Interface/Imagens/frc.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Get Ready",
+     "descricao": "Corra essas provas de apenas uma volta e mostre que você é bom.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/get-ready.swf",
+     "imagem": "Interface/Imagens/get-ready.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Goose Head Racing",
+     "descricao": "Acelere até a linha de chegada e tente diminuir a velocidade para não bater.",
+     "controles": "Teclado – Setas: Mudam marcha; Espaço: Acelera.",
+     "arquivo": "Corrida/goosehead-racing.swf",
+     "imagem": "Interface/Imagens/goosehead-racing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "GR8 Racing",
+     "descricao": "Pilote seu carrão por essas curvas perigosas.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/gr8-racing.swf",
+     "imagem": "Interface/Imagens/gr8-racing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hamster",
+     "descricao": "Controle este hamster para ele não sair da pista.",
+     "controles": "Mouse – Botão esquerdo: Curva.",
+     "arquivo": "Corrida/hamster.swf",
+     "imagem": "Interface/Imagens/hamster.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Itais Racing Track",
+     "descricao": "Controle o skate e chegue em primeiro nessa corrida de pranchinhas.",
+     "controles": "Teclado – Setas: Movimentam skate.",
+     "arquivo": "Corrida/itais-racing-track.swf",
+     "imagem": "Interface/Imagens/itais-racing-track.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Kart Race",
+     "descricao": "Entre e vença essa louca corrida. Obs.: Para que o game funcione corretamente, instale o Shockwave Player que se encontra na categoria ESSENCIAIS do CD. Ao iniciar o jogo pela primeira vez, é necessário estar conectado à Internet para atualizá-lo. O game roda somente no navegador Internet Explorer, ativando os recursos do \"ActiveX\" do seu navegador.",
+     "controles": "Teclado – Setas: Movimentam carro; Espaço: Ação.",
+     "arquivo": "Corrida/kart_race/game.dcr",
+     "imagem": "Interface/Imagens/kart_race.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Karting",
+     "descricao": "Movimente o kart para desviar dos outros mais lentos.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/karting.swf",
+     "imagem": "Interface/Imagens/karting.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "King of Power",
+     "descricao": "Pilote a lancha e seja o vencedor das etapas.",
+     "controles": "Teclado – Setas: Movimenta lancha.",
+     "arquivo": "Corrida/king_of_power.swf",
+     "imagem": "Interface/Imagens/king_of_power.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mad Truckers",
+     "descricao": "Acelere o caminhão truckado até o fim do trajeto.",
+     "controles": "Mouse – Movimenta caminhão.",
+     "arquivo": "Corrida/MadTruckers.swf",
+     "imagem": "Interface/Imagens/MadTruckers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Micro Machines",
+     "descricao": "Pilote o carrinho que está sobre a mesa.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/micro-machines.swf",
+     "imagem": "Interface/Imagens/micro-machines.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mini Moto",
+     "descricao": "Pilote essa mini moto pelas pistas mais radicais.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/minimoto.swf",
+     "imagem": "Interface/Imagens/minimoto.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Monsters Jam Destruction",
+     "descricao": "Destrua tudo com esse carro para passar as fases.",
+     "controles": "Teclado – Setas: Movimentam carro; Espaço: Pula.",
+     "arquivo": "Corrida/Monsters_Jam_Destruction.swf",
+     "imagem": "Interface/Imagens/Monsters_Jam_Destruction.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Moon Buggy",
+     "descricao": "Pegue todos os astronautas perdidos no espaço.",
+     "controles": "Teclado – Setas: Movimentam carro; Espaço: Muda direção.",
+     "arquivo": "Corrida/moon_buggy.swf",
+     "imagem": "Interface/Imagens/moon_buggy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Moon Rider",
+     "descricao": "Pilote esta moto com ajuda da luz da lua.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/moon-rider.swf",
+     "imagem": "Interface/Imagens/moon-rider.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Motor Madness",
+     "descricao": "Dispute e ganhe as corridas de moto.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/Motor_Madness.swf",
+     "imagem": "Interface/Imagens/Motor_Madness.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mud Bike Racing",
+     "descricao": "Corra de quadriciclo nessa pista de terra.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/mud-bike-racing.swf",
+     "imagem": "Interface/Imagens/mud-bike-racing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Nacho Libre Andale Nacho Andale",
+     "descricao": "Ande com essa moto bem diferente em pistas bem loucas.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/nacho-libre-andale-nacho-andale.swf",
+     "imagem": "Interface/Imagens/nacho-libre-andale-nacho-andale.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Need For Speed Mile Challenge",
+     "descricao": "Vá até linha de chegada com super carros do NFS.",
+     "controles": "Teclado – Setas: Mudam marcha; Espaço: Acelera; \"N\": Turbo.",
+     "arquivo": "Corrida/need-for-speed-mile-challenge.swf",
+     "imagem": "Interface/Imagens/need-for-speed-mile-challenge.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "New Car Race",
+     "descricao": "Controle este carro para sobreviver à corrida.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/new-car-race.swf",
+     "imagem": "Interface/Imagens/new-car-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Over Steel",
+     "descricao": "Pilote esse carro por vários circuits em várias competições.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/over-steel.swf",
+     "imagem": "Interface/Imagens/over-steel.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pathfinder",
+     "descricao": "Controle o carro na pista e pegue vários bônus.",
+     "controles": "Mouse – Movimenta carro.",
+     "arquivo": "Corrida/pathfinder.swf",
+     "imagem": "Interface/Imagens/pathfinder.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Peugeot Time Trial",
+     "descricao": "Pegue seu Peugeot e pilote em vários circuitos diferentes.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/peugeot-time-trial.swf",
+     "imagem": "Interface/Imagens/peugeot-time-trial.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pole Position",
+     "descricao": "Pilote essa super máquina, faça a pole.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/poleposition.swf",
+     "imagem": "Interface/Imagens/poleposition.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Raccoon Racing",
+     "descricao": "Escolha seu personagem e ganhe as provas de corrida.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Ataque.",
+     "arquivo": "Corrida/racoonracing.swf",
+     "imagem": "Interface/Imagens/racoonracing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rally",
+     "descricao": "Pilote este corpo estranho e ganhe de você mesmo.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/rally.swf",
+     "imagem": "Interface/Imagens/rally.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Replay Racer",
+     "descricao": "Escolha o carro e a pista na qual deseja correr.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/replayracer.swf",
+     "imagem": "Interface/Imagens/replayracer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rickshaw Rampage",
+     "descricao": "Desvie dos carros mais lentos que o seu, mas lembre-se do combustível.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/rickshaw-rampage.swf",
+     "imagem": "Interface/Imagens/rickshaw-rampage.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rocket Bike",
+     "descricao": "Escolha seu personagem e vença esta corrida maluca.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Corrida/rocket-bike.swf",
+     "imagem": "Interface/Imagens/rocket-bike.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Run With the Doctor",
+     "descricao": "Pilote a moto e ganhe várias provas ao redor do mundo.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/Run_With_the_Doctor.swf",
+     "imagem": "Interface/Imagens/Run_With_the_Doctor.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rush Racer",
+     "descricao": "Escolha seu carrão e dispute várias corridas.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/Rush_Racer.swf",
+     "imagem": "Interface/Imagens/Rush_Racer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sheep Racer",
+     "descricao": "Corra com a ovelha e tente pegar as bandeiras.",
+     "controles": "Mouse – Movimenta personagem; Botão esquerdo: Pula.",
+     "arquivo": "Corrida/sheep-racer.swf",
+     "imagem": "Interface/Imagens/sheep-racer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Space Daytona",
+     "descricao": "Participe dessa corrida que acontece nos anéis de algum planeta. Obs.: Para que o game funcione corretamente, instale o Shockwave Player que se encontra na categoria ESSENCIAIS do CD. Ao iniciar o jogo pela primeira vez, é necessário estar conectado à Internet para atualizá-lo. O game roda somente no navegador Internet Explorer, ativando os recursos do \"ActiveX\" do seu navegador.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/SpaceDaytona/game.dcr",
+     "imagem": "Interface/Imagens/SpaceDaytona.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Speed Warrior",
+     "descricao": "Vença as provas para destravar carros e pistas novas.",
+     "controles": "Teclado – Setas: Movimenta carro; Espaço: Freio; \"X\": Turbo.",
+     "arquivo": "Corrida/speed-warrior.swf",
+     "imagem": "Interface/Imagens/speed-warrior.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "TFGF Game Race",
+     "descricao": "Corra muito com sua nave para ganhar de seus adversários.",
+     "controles": "Teclado – Setas: Movimentam nave.",
+     "arquivo": "Corrida/tfgf-game-race.swf",
+     "imagem": "Interface/Imagens/tfgf-game-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Sheep Race",
+     "descricao": "Corra e pule os obstáculos com sua ovelha em vários níveis de dificuldade.",
+     "controles": "Teclado – Espaço: Pula.",
+     "arquivo": "Corrida/the-sheep-race.swf",
+     "imagem": "Interface/Imagens/the-sheep-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tiger Cross",
+     "descricao": "Escolha seu veículo e faça sucesso nas pistas off-road. Obs.: Para que o game funcione corretamente, instale o Shockwave Player que se encontra na categoria ESSENCIAIS do CD. Ao iniciar o jogo pela primeira vez, é necessário estar conectado à Internet para atualizá-lo. O game roda somente no navegador Internet Explorer, ativando os recursos do \"ActiveX\" do seu navegador.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Turbo; \"X\": Ação.",
+     "arquivo": "Corrida/tiger-cross/game.dcr",
+     "imagem": "Interface/Imagens/tiger-cross.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Toy Story Van",
+     "descricao": "Desvie-se dos carros errados e entre no caminhão certo.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Corrida/toystoryvan.swf",
+     "imagem": "Interface/Imagens/toystoryvan.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Trailer Parking Racing 2000",
+     "descricao": "Desvie-se de todos os perigos que esta corrida trás.",
+     "controles": "Teclado – Play 1 – \"Z\": Pula; Play 2 – \"M\": Pula.",
+     "arquivo": "Corrida/trailer-parking-racing-2000.swf",
+     "imagem": "Interface/Imagens/trailer-parking-racing-2000.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "TZero TurboX",
+     "descricao": "Ganhe as corridas e melhore ainda mais sua nave.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Turbo; CTRL: Turbo.",
+     "arquivo": "Corrida/TZeroTurboX.swf",
+     "imagem": "Interface/Imagens/TZeroTurboX.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ufo Racing",
+     "descricao": "Escolha seu disco voador e ganhe as corridas.",
+     "controles": "Teclado – Play 1 – Setas: Movimentam personagem; Shift: Turbo. Play 2: W, A, S, D: Movimentam personagem; Espaço: Turbo.",
+     "arquivo": "Corrida/uforacing.swf",
+     "imagem": "Interface/Imagens/uforacing.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wheelie car",
+     "descricao": "Equilibre seu carro somente nas rodas traseiras.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/wheelie_car.swf",
+     "imagem": "Interface/Imagens/wheelie_car.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wheellers",
+     "descricao": "Participe e ganhe as provas de motovelocidade.",
+     "controles": "Teclado – Setas: Movimentam corredor.",
+     "arquivo": "Corrida/wheellers.swf",
+     "imagem": "Interface/Imagens/wheellers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wow What a Race",
+     "descricao": "Complete as provas e ganhe medalhas para abrir novas telas.",
+     "controles": "Teclado – Setas: Movimentam carro.",
+     "arquivo": "Corrida/wow-what-a-race.swf",
+     "imagem": "Interface/Imagens/wow-what-a-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Xenon Prime Racing",
+     "descricao": "Corra em alta velocidade com modernas naves equipadas para vencer.",
+     "controles": "Teclado – Setas: Movimentam nave.",
+     "arquivo": "Corrida/xenonprimeracing.swf",
+     "imagem": "Interface/Imagens/xenonprimeracing.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "esportes",
+   "nome": "Esportes",
+   "jogos": [
+    {
+     "nome": "3D Tennis",
+     "descricao": "Mostre que você é o dono das quadras de tênis.",
+     "controles": "Mouse – Movimenta jogador; Botão esquerdo: Ataque.",
+     "arquivo": "Esportes/3d-tennis.swf",
+     "imagem": "Interface/Imagens/3d-tennis.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Adrenaline",
+     "descricao": "Leve o esportista até a bolinha para liberar a saída da fase.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Muda direção.",
+     "arquivo": "Esportes/adrenaline.swf",
+     "imagem": "Interface/Imagens/adrenaline.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Animal Bike Tour",
+     "descricao": "Percorra os caminhos montanhosos e faça a pontuação mínima para passar a fase.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Esportes/animalbiketour.swf",
+     "imagem": "Interface/Imagens/animalbiketour.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Baseball",
+     "descricao": "Rebata as bolas que o adversário lançar para você.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Esportes/baseball.swf",
+     "imagem": "Interface/Imagens/baseball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Beach Blaze",
+     "descricao": "Jogue biquínis em seus adversários.",
+     "controles": "Teclado – Setas: Movimentam personagem; A; S: Ataque.",
+     "arquivo": "Esportes/beach-blaze.swf",
+     "imagem": "Interface/Imagens/beach-blaze.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bike Mania 4",
+     "descricao": "Complete as fases andando sobre a mesa de casa.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Esportes/bikemania4.swf",
+     "imagem": "Interface/Imagens/bikemania4.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bumper Ball",
+     "descricao": "Marque gols neste futebol onde o jogador é um carrinho.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Esportes/bumper-ball.swf",
+     "imagem": "Interface/Imagens/bumper-ball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Camp Runamuck",
+     "descricao": "Seja rápido e remando com as próprias mãos tente fazer a volta mais rápido na piscina.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/camp-runamuck.swf",
+     "imagem": "Interface/Imagens/camp-runamuck.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Captain Chaos",
+     "descricao": "Passe pelos desafios dos mares e ganhe essa corrida de barco á vela.",
+     "controles": "Teclado – Setas: Movimentam barco.",
+     "arquivo": "Esportes/captain-chaos.swf",
+     "imagem": "Interface/Imagens/captain-chaos.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Croatia",
+     "descricao": "Seja um grande goleiro e agarre pênaltis nesse jogo decisivo.",
+     "controles": "Teclado – A, Q, W, E, D: Direção de salto.",
+     "arquivo": "Esportes/Croatia.swf",
+     "imagem": "Interface/Imagens/Croatia.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fisher Boy",
+     "descricao": "Vá a caça e pegue o maior número de peixes das espécies que foram pedidas.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Esportes/fisherboy.swf",
+     "imagem": "Interface/Imagens/fisherboy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fishhh",
+     "descricao": "Pesque muitas espécies diferentes de peixes.",
+     "controles": "Mouse – Movimenta personagem; Botão esquerdo: Joga linha.",
+     "arquivo": "Esportes/fishhh.swf",
+     "imagem": "Interface/Imagens/fishhh.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Flash Racer",
+     "descricao": "Complete as missões da corrida nesse super jogo.",
+     "controles": "Teclado – Setas: Movimentam carro; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Esportes/flash-racer.swf",
+     "imagem": "Interface/Imagens/flash-racer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Free Kick",
+     "descricao": "Marque belos gols de falta.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Esportes/freeKick.swf",
+     "imagem": "Interface/Imagens/freeKick.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "FuteBoton",
+     "descricao": "Nesse jogo você é uma peça do futebol de botão, seja o craque do time.",
+     "controles": "Mouse – Botão esquerdo: Interagem com o jogo.",
+     "arquivo": "Esportes/futeboton.swf",
+     "imagem": "Interface/Imagens/futeboton.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "GMX SkateBoarding",
+     "descricao": "Faça manobras muito radicais com seu skate.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/gmx-skateboarding.swf",
+     "imagem": "Interface/Imagens/gmx-skateboarding.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gunning for Gold",
+     "descricao": "Atire no centro do alvo para marcar mais pontos nas competições.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Esportes/gunning-for-gold.swf",
+     "imagem": "Interface/Imagens/gunning-for-gold.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "James the Beach Zebra",
+     "descricao": "Cave na terra para conseguir achar verdadeiros tesouros na areia.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Esportes/james-the-beach-zebra.swf",
+     "imagem": "Interface/Imagens/james-the-beach-zebra.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Jeeves Volleyball",
+     "descricao": "Jogue esse vôlei com mordomos, prata e porcelana.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Ataque.",
+     "arquivo": "Esportes/jeeves-volleyball.swf",
+     "imagem": "Interface/Imagens/jeeves-volleyball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "JetiX Soccer",
+     "descricao": "Forme seu time e vá para um super campeonato.",
+     "controles": "Teclado – Setas: Movimentam jogadores; \"M\": Passe; Corre; \"N\": Chute; Defende.",
+     "arquivo": "Esportes/jetixsoccer/game.dcr",
+     "imagem": "Interface/Imagens/jetixsoccer.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Kayak Race",
+     "descricao": "Ande de caiaque e tente desviar das pedras.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Esportes/kayak-race.swf",
+     "imagem": "Interface/Imagens/kayak-race.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mesterekszezonja",
+     "descricao": "Complete as fases passando por todas as aventuras radicais.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Esportes/mesterekszezonja.swf",
+     "imagem": "Interface/Imagens/mesterekszezonja.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Motocross FMX",
+     "descricao": "Faça várias manobras radicais para chegar a pontuação para passar a fase.",
+     "controles": "Teclado – Setas: Movimentam personagem; 1-7: Manobras.",
+     "arquivo": "Esportes/motocross-fmx.swf",
+     "imagem": "Interface/Imagens/motocross-fmx.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mountain Bike",
+     "descricao": "Complete os desafios com sua bike.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Muda direção.",
+     "arquivo": "Esportes/mountain-bike.swf",
+     "imagem": "Interface/Imagens/mountain-bike.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Olympic Challange",
+     "descricao": "Seja o campeão em várias modalidades olímpicas.",
+     "controles": "Teclado – Interage com o jogo.",
+     "arquivo": "Esportes/Olympic_Challange.swf",
+     "imagem": "Interface/Imagens/Olympic_Challange.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Parkour",
+     "descricao": "Faça movimentos radicais nesse esporte muito desafiador.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/parkour.swf",
+     "imagem": "Interface/Imagens/parkour.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Peanut",
+     "descricao": "Faça gols de amendoim nos esquilos.",
+     "controles": "Mouse – Movimenta mão; Botão esquerdo: Ação.",
+     "arquivo": "Esportes/peanut.swf",
+     "imagem": "Interface/Imagens/peanut.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pearl Diver",
+     "descricao": "Explore o fundo do mar atrás de tesouros.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pega tesouro.",
+     "arquivo": "Esportes/pearl-diver.swf",
+     "imagem": "Interface/Imagens/pearl-diver.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pebble Dash",
+     "descricao": "Arremesse o objeto o mais longe que conseguir.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Esportes/pebbledash.swf",
+     "imagem": "Interface/Imagens/pebbledash.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pesca",
+     "descricao": "Preste atenção para ver se você fisgou o peixe e puxe-o.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Esportes/pesca.swf",
+     "imagem": "Interface/Imagens/pesca.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Peteca",
+     "descricao": "Participe de emocionantes jogos de petecas.",
+     "controles": "Mouse – Movimenta raquete; Botão esquerdo: Rebate.",
+     "arquivo": "Esportes/peteca.swf",
+     "imagem": "Interface/Imagens/peteca.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pingu Sports",
+     "descricao": "Acabe com todos os blocos de gelo com a gangorra de pinguins.",
+     "controles": "Teclado – Setas: Movimenta carro; Espaço: Inverte posição.",
+     "arquivo": "Esportes/pingu-sports.swf",
+     "imagem": "Interface/Imagens/pingu-sports.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "RedBull Crashed Ice",
+     "descricao": "Classifique-se e enfrente um campeonato de ski.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Esportes/RedBullCrashedIce/game.dcr",
+     "imagem": "Interface/Imagens/RedBullCrashedIce.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Robo Soccer",
+     "descricao": "Mostre que você é fera na arte de bater peteca.",
+     "controles": "Mouse – Movimenta personagem; Botão esquerdo: Malabarismo.",
+     "arquivo": "Esportes/robosoccer.swf",
+     "imagem": "Interface/Imagens/robosoccer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Roller Academy",
+     "descricao": "Ande de patins nessa rua cheia de sujeira.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Esportes/roller-academy.swf",
+     "imagem": "Interface/Imagens/roller-academy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Rooftop Skater",
+     "descricao": "Ande de skate sobre os prédios mais altos da cidade.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/rooftop-skater.swf",
+     "imagem": "Interface/Imagens/rooftop-skater.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Snowboard Slope",
+     "descricao": "Ande nessa super pista de snowboard para vencer as disputas.",
+     "controles": "Teclado – Setas: Movimentam personagem; A; Z; S; X; D; C: Interagem com o jogo.",
+     "arquivo": "Esportes/snowboard-slope.swf",
+     "imagem": "Interface/Imagens/snowboard-slope.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Spalding",
+     "descricao": "Vá até o círculo marcado e arremesse para fazer a cesta.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Arremessa bola.",
+     "arquivo": "Esportes/spalding.swf",
+     "imagem": "Interface/Imagens/spalding.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Street Ride",
+     "descricao": "Escolha seu personagem e saia fazendo muitas manobras.",
+     "controles": "Teclado – Setas: Movimentam personagem; \"X\": Manobra.",
+     "arquivo": "Esportes/street-ride/game.dcr",
+     "imagem": "Interface/Imagens/street-ride.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "Surfs Up",
+     "descricao": "Faça várias manobras de surf nessa praia que está bombando.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/surfs-up.swf",
+     "imagem": "Interface/Imagens/surfs-up.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Team Mickey’s Tennis",
+     "descricao": "Ganhe de todos os personagens da turma do Mickey no jogo de pong.",
+     "controles": "Mouse – Movimenta raquete.",
+     "arquivo": "Esportes/teammickeystennis.swf",
+     "imagem": "Interface/Imagens/teammickeystennis.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tennis 2000",
+     "descricao": "Participe de vários jogos de tênis em diversos lugares do mundo.",
+     "controles": "Mouse – Movimenta jogador; Botão esquerdo: Rebate.",
+     "arquivo": "Esportes/tennis-2000.swf",
+     "imagem": "Interface/Imagens/tennis-2000.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Champions 2 Euro 2008",
+     "descricao": "Ganhe a copa do mundo de futebol com o time escolhido.",
+     "controles": "Teclado – Setas: Movimentam personagens; X; C: Chuta.",
+     "arquivo": "Esportes/thechampions2euro2008.swf",
+     "imagem": "Interface/Imagens/thechampions2euro2008.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Trampoline",
+     "descricao": "Faça diversas acrobacias com o ginasta no trampolim.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Esportes/trampoline.swf",
+     "imagem": "Interface/Imagens/trampoline.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Two A Days Nightmare at Hoover High",
+     "descricao": "Pegue as bolas de futebol americano, passe pelas barreiras e faça um touchdown.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço/Z: Pula; C, X: Ataque.",
+     "arquivo": "Esportes/Two_A_Days_Nightmare_at_Hoover_High.swf",
+     "imagem": "Interface/Imagens/Two_A_Days_Nightmare_at_Hoover_High.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Virtual Curling",
+     "descricao": "Mire e jogue o dico, quanto mais perto do centro do circulo você chegar mais pontos irá ganhar.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Esportes/virtual-curling.swf",
+     "imagem": "Interface/Imagens/virtual-curling.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Vuletide Riptide",
+     "descricao": "Pegue os números que vêm na água par afazer manobras.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Esportes/yuletide-riptide.swf",
+     "imagem": "Interface/Imagens/yuletide-riptide.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "WakeBoarding XS",
+     "descricao": "Faça várias manobras de wakeboard na água.",
+     "controles": "Teclado – Setas: Movimentam manobras; Z, X, C, V: Manobra; Espaço: Corrimão.",
+     "arquivo": "Esportes/wakeboarding-xs.swf",
+     "imagem": "Interface/Imagens/wakeboarding-xs.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "X - Hoc",
+     "descricao": "Jogue futebol com esses robozinhos diferentes.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Chuta.",
+     "arquivo": "Esportes/x-hoc.swf",
+     "imagem": "Interface/Imagens/x-hoc.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "estrategia",
+   "nome": "Estratégia",
+   "jogos": [
+    {
+     "nome": "Age of War",
+     "descricao": "Viaje pela história da humanidade, evolua seu exército até conseguir a vitória.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/age-of-war.swf",
+     "imagem": "Interface/Imagens/age-of-war.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Air Battle",
+     "descricao": "Voe com seu canhão e tente chegar até a saída, tome cuidado com a força inimiga que quer te derrubar.",
+     "controles": "Teclado – W,A,S,D: Movimentam o personagem; Mouse – Mira; botão esquerdo: Atira.",
+     "arquivo": "Estrategia/air-battle.swf",
+     "imagem": "Interface/Imagens/air-battle.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Animal Wars",
+     "descricao": "Escolha seu animal preferido e prepare-se para uma batalha bem estranha.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Mouse – Botão esquedo: Interage com o jogo.",
+     "arquivo": "Estrategia/animal-wars.swf",
+     "imagem": "Interface/Imagens/animal-wars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ant Buster",
+     "descricao": "Monte sua linha de defesa e impeça que as formigas passem por você e pegue o bolo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/antbuster.swf",
+     "imagem": "Interface/Imagens/antbuster.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Art of War",
+     "descricao": "Acabe com o exército inimigos com seu poderoso rifle.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/artofwar.swf",
+     "imagem": "Interface/Imagens/artofwar.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Assembler",
+     "descricao": "Movimente as caixas pela tela para conseguir coloca-las nos lugares certos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/Assembler.swf",
+     "imagem": "Interface/Imagens/Assembler.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Axterix",
+     "descricao": "Movimente a catapulta para acertar os objetos.",
+     "controles": "Teclado – Setas: Movimentam mira; A: Atira; Q: Troca arma.",
+     "arquivo": "Estrategia/axterix.swf",
+     "imagem": "Interface/Imagens/axterix.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Balloon in Vasion",
+     "descricao": "Escolha as melhores armas para conseguir impedir o avanço do exército inimigo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/ballooninvasion.swf",
+     "imagem": "Interface/Imagens/ballooninvasion.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Battle of the Bands",
+     "descricao": "Seja campeão da batalha das bandas e vire uma lenda do rock.",
+     "controles": "Teclado – A, S, D, Espaço; J, K, L: Interagem com o jogo.",
+     "arquivo": "Estrategia/battle_of_the_bands.swf",
+     "imagem": "Interface/Imagens/battle_of_the_bands.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Battleground States 2008",
+     "descricao": "Escolha seu candidato preferido e tente ganhar o maior número de votos que conseguir.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/BATTLEGROUND_STATES_2008.swf",
+     "imagem": "Interface/Imagens/BATTLEGROUND.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bloons Player 5",
+     "descricao": "Atire os dardos nos balões certos para conseguir estourar a maior quantidade deles.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/bloons-player-pack-5.swf",
+     "imagem": "Interface/Imagens/bloons-player-pack-5.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bloxorz",
+     "descricao": "Movimente o bloco pela tela e faça-a encaixar na saída.",
+     "controles": "Teclado – Setas: Movimentam o bloco.",
+     "arquivo": "Estrategia/bloxorz.swf",
+     "imagem": "Interface/Imagens/bloxorz.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bug Wave",
+     "descricao": "Monte uma estratégia que consiga impedir o avanço dos insetos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/bugWave.swf",
+     "imagem": "Interface/Imagens/bugWave.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bump Copter",
+     "descricao": "Leve o helicóptero até a saída sem bater nos objetos.",
+     "controles": "Teclado – W, A, S, D: Movimentam helicóptero.",
+     "arquivo": "Estrategia/bump-copter.swf",
+     "imagem": "Interface/Imagens/bump-copter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Chasm",
+     "descricao": "Clique nos lugares certos para conseguir decifrar toda a história.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/chasm.swf",
+     "imagem": "Interface/Imagens/chasm.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Chat Noir",
+     "descricao": "Seja mais inteligente que esse gatinho, clique nos lugares certos para conseguir tranca-lo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/chatnoir.swf",
+     "imagem": "Interface/Imagens/chatnoir.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Crazy Crossings",
+     "descricao": "Ajude as crianças a atravessarem a rua com segurança.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Estrategia/crazy-crossings.swf",
+     "imagem": "Interface/Imagens/crazy-crossings.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cursor 10",
+     "descricao": "Avance pela tela, você terá alguns segundos para conseguir chegar até ultimo nível.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/cursor10.swf",
+     "imagem": "Interface/Imagens/cursor10.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Divergence Turre Defense",
+     "descricao": "Coloque os canhões em suas posições e prepare-se para defender sua base de um ataque devastador.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/divergence-turret-defense.swf",
+     "imagem": "Interface/Imagens/divergence-turret-defense.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Elemental",
+     "descricao": "Veja onde é a melhor posição para colocar suas torres e acabar com o inimigo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/elemental-turret-def.swf",
+     "imagem": "Interface/Imagens/elemental-turret-def.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Eolica",
+     "descricao": "Controle a força do vento e ajude a energia eólica a ganhar destaque.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/eolica.swf",
+     "imagem": "Interface/Imagens/eolica.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fltron",
+     "descricao": "Pense rápido, faça as curvas com precisão e ganhe de seu oponente.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Estrategia/Fltron.swf",
+     "imagem": "Interface/Imagens/Fltron.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gem Craft",
+     "descricao": "Crie as torres e os cristais para conseguir destruir todos os inimigos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/gemcraft.swf",
+     "imagem": "Interface/Imagens/gemcraft.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Grow Island",
+     "descricao": "Descubra a ordem certa para conseguir viver em paz nessa linda ilha, tente também desvendar o final secreto.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/grow_island.swf",
+     "imagem": "Interface/Imagens/grow_island.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hands of War RPG",
+     "descricao": "Escolha seu personagem favorito para deixa-lo muito forte.",
+     "controles": "Teclado – Setas: movimentam o personagem; Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/handsofwarrpg.swf",
+     "imagem": "Interface/Imagens/handsofwarrpg.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Head Defence",
+     "descricao": "Jogue as bombas no castelo inimigo, tome cuidado para não jogar para o lado errado.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Estrategia/head-defence.swf",
+     "imagem": "Interface/Imagens/head-defence.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Helix Defence",
+     "descricao": "Coloque os lasers nas melhores posições para conseguir destruir todos os invasores.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/helixdef.swf",
+     "imagem": "Interface/Imagens/helixdef.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Incredibots",
+     "descricao": "Monte os blocos para cumprir as missões de cada nível.",
+     "controles": "Teclado – Setas: Interagem com o jogo; mouse – Interage com o jogo.",
+     "arquivo": "Estrategia/incredibots.swf",
+     "imagem": "Interface/Imagens/incredibots.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Insurgo",
+     "descricao": "Seja rápido e tente montar uma torre muito grande.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/insurgo.swf",
+     "imagem": "Interface/Imagens/insurgo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mickey",
+     "descricao": "Ajude Mickey a estourar todas as bolhas, tome cuidado para não acabar com a água.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/gotasdemickey.swf",
+     "imagem": "Interface/Imagens/gotasdemickey.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mind Bender",
+     "descricao": "Use seus poderes especiais para mover as caixas para passar de nível.",
+     "controles": "Teclado – W;A;S;D: Movimentam o personagem; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Estrategia/mindbender.swf",
+     "imagem": "Interface/Imagens/mindbender.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mirror Edge",
+     "descricao": "Passe por todos os obstáculos usando somente sua força e equilíbrio.",
+     "controles": "Teclado – Setas: Movimentam o personagem; S: Salta. Obs.: Caso o jogo não execute; clique com o botão direito do mouse sobre a tela do jogo e escolha a opção reproduzir.",
+     "arquivo": "Estrategia/MirrorsEdge.swf",
+     "imagem": "Interface/Imagens/MirrorsEdge.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mouse in Brigge",
+     "descricao": "Movimente a rampa nos momentos certos para ajudar na travessia dos hamster.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/mouse-in-brigge.swf",
+     "imagem": "Interface/Imagens/mouse-in-brigge.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ninjas",
+     "descricao": "Mude seu elemento para conseguir ser vitorioso em todas as batalhas.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/ninjas.swf",
+     "imagem": "Interface/Imagens/ninjas.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Portal",
+     "descricao": "Use sua arma para abrir portais e passar por todas as dificuldades de cada nível.",
+     "controles": "Teclado – W,A,S,D: Movimentam o personagem; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Estrategia/Portal.swf",
+     "imagem": "Interface/Imagens/Portal.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Prism",
+     "descricao": "Movimente os objetos do mapa para conseguir iluminar todos os monstrinhos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/prism.swf",
+     "imagem": "Interface/Imagens/prism.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pumpkin Battle",
+     "descricao": "Entre em uma divertida batalha, ataque a abóbora inimiga para ganhar o duelo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/pumpkinbattle.swf",
+     "imagem": "Interface/Imagens/pumpkinbattle.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "River Defense",
+     "descricao": "Organize sua linha de defesa para conseguir destruir todos os monstros.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/river-defense.swf",
+     "imagem": "Interface/Imagens/river-defense.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Shadez",
+     "descricao": "Compre armamento e crie soldados para conseguir um poderoso em invencível exército.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/shadez.swf",
+     "imagem": "Interface/Imagens/shadez.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Shore Siege",
+     "descricao": "Proteja o navio do ataque desses estranho monstros.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/shore-siege.swf",
+     "imagem": "Interface/Imagens/shore-siege.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Snowball",
+     "descricao": "Calcule a distância e a força necessária para acertar o tanque inimigos com um disparo de bola de neve.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/snowball.swf",
+     "imagem": "Interface/Imagens/snowball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Star Rebellion",
+     "descricao": "Proteja sua base contra o ataque de seus inimigos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/star-rebellion.swf",
+     "imagem": "Interface/Imagens/star-rebellion.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Star Troopers",
+     "descricao": "Movimente sabiamente seus soldados para que todos cheguem ao final do nível vivos.",
+     "controles": "Teclado – W,A,S,D: Movimentam os soldados; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Estrategia/startroopers.swf",
+     "imagem": "Interface/Imagens/startroopers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Stone Age Sam",
+     "descricao": "Clique nos lugares certos para conseguir ajuda o personagem.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/stonagesam.swf",
+     "imagem": "Interface/Imagens/stonagesam.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Storm the House 2",
+     "descricao": "Defenda sua base a todo custo, compre arma e contrate mercenários para conseguir protege-la.",
+     "controles": "Teclado – Espaço: Recarrega; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Estrategia/storm-the-house-2.swf",
+     "imagem": "Interface/Imagens/storm-the-house-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Storm Winds",
+     "descricao": "Equipe sua base com as mais modernas armas para conseguir derrotar o inimigo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/stormwinds.swf",
+     "imagem": "Interface/Imagens/stormwinds.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tank Wars",
+     "descricao": "Faça todas as contas necessárias para acertar seu inimigos com um tiro a distância.",
+     "controles": "Teclado – A,Z: Força do tiro; Setas: Interagem com o jogo; Espaço: Atira.",
+     "arquivo": "Estrategia/tank-wars.swf",
+     "imagem": "Interface/Imagens/tank-wars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Battle New",
+     "descricao": "Crie guerreiros e os ajude a destruir qualquer um que entrar em seu caminho.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/thebattlenew.swf",
+     "imagem": "Interface/Imagens/thebattlenew.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Dark Age",
+     "descricao": "Crie um exército de monstro para que você consiga destruir seu inimigo.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/the-dark-age.swf",
+     "imagem": "Interface/Imagens/the-dark-age.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The Life Ark",
+     "descricao": "Clique nos lugares corretos para conseguir salvar o game.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/theLifeArk.swf",
+     "imagem": "Interface/Imagens/theLifeArk.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Top Figures",
+     "descricao": "Remova as colunas corretas para que o menino continue acima da água.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/topfigures.swf",
+     "imagem": "Interface/Imagens/topfigures.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tower Zombie",
+     "descricao": "Coloque as torres nos lugares corretos para conseguir impedir o avanço dos zumbis.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/TowerZombie.swf",
+     "imagem": "Interface/Imagens/TowerZombie.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wheels of Salvation",
+     "descricao": "Ajude o explorador a sair da caverna.",
+     "controles": "Teclado – Espaço: Salta.",
+     "arquivo": "Estrategia/wheels-of-salvation.swf",
+     "imagem": "Interface/Imagens/wheels-of-salvation.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wooglings",
+     "descricao": "Escolha a melhor opção para cada personagem para conseguir superar todos os obstáculos.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/wooglings.swf",
+     "imagem": "Interface/Imagens/wooglings.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "World Wars",
+     "descricao": "Veja qual é a melhor área a ser atacada e conquistada tome cuidado com a numero do inimigo em cada área.",
+     "controles": "Mouse – Botão esquerdo: Interage com jogo.",
+     "arquivo": "Estrategia/world-wars.swf",
+     "imagem": "Interface/Imagens/world-wars.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "luta",
+   "nome": "Luta",
+   "jogos": [
+    {
+     "nome": "Antkendo",
+     "descricao": "Suba na corda bamba e enfrente o desafio.",
+     "controles": "Mouse – Movimenta o personagem; Botão esquerdo: ataca.",
+     "arquivo": "Luta/antkendo.swf",
+     "imagem": "Interface/Imagens/antkendo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Armadillo Knight 2 1",
+     "descricao": "Salve os animais da floresta dos caçadores.",
+     "controles": "Teclado – Setas: movimentam o personagem; Espaço: ataca.",
+     "arquivo": "Luta/armadillo_knight_2_1.swf",
+     "imagem": "Interface/Imagens/armadillo_knight_2_1.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Art Of Fighting",
+     "descricao": "Aprenda a usar os golpes especiais do Art of Fighting.",
+     "controles": "Teclado – Setas: movimentam o personagem; A: ataca.",
+     "arquivo": "Luta/art_of_fighting.swf",
+     "imagem": "Interface/Imagens/art_of_fighting.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Avatar Arena",
+     "descricao": "Crie seu lutador, escolha seu elemento e entre em um incrível torneio cheio de poderes.",
+     "controles": "Teclado – Setas: movimentam o personagem; Espaço: Ataca.",
+     "arquivo": "Luta/avatararena.swf",
+     "imagem": "Interface/Imagens/avatararena.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Batman Mistery Of Batwoman",
+     "descricao": "Batman tenta descobrir que é a Batwoman.",
+     "controles": "Teclado – Setas: movimentam o personagem; Ctrl: ataca; Espaço: utiliza o gancho.",
+     "arquivo": "Luta/batman_mistery_of_batwoman.swf",
+     "imagem": "Interface/Imagens/batman_mistery_of_batwoman.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bumper Cars Demolition",
+     "descricao": "Destrua os carrinhos de batida adversários.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Luta/bumpercarsdemolition.swf",
+     "imagem": "Interface/Imagens/bumpercarsdemolition.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Capoeira Fighter",
+     "descricao": "Mostre que você tem toda a ginga da capoeira.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; G, H, V, B: Ataque.",
+     "arquivo": "Luta/capoeirafighter.swf",
+     "imagem": "Interface/Imagens/capoeirafighter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dragon Ball Z Power Levels",
+     "descricao": "Vença as batalhas com o grande guerreiro Goku.",
+     "controles": "Teclado – Setas: Movimentam personagem; A; S; Z; X: Ataque; Espaço: Energia.",
+     "arquivo": "Luta/dragonballzpowerlevels.swf",
+     "imagem": "Interface/Imagens/dragonballzpowerlevels.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dynasty Warrior",
+     "descricao": "Passe por grandes desafios no meio da floresta.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; \"J\": Soco; \"K\": Pula; U; I: Interagem com o jogo.",
+     "arquivo": "Luta/dynasty-warrior.swf",
+     "imagem": "Interface/Imagens/dynasty-warrior.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Egg Fighter",
+     "descricao": "Participe dessa batalha muito louca, lute com ovos.",
+     "controles": "Teclado – Play 1: S, Z, X, C: Movimentam personagem; Q, W: Ataque;  E: Defende. Play 2: Setas: Movimentam personagem; I; O: Ataque; P: Defende.",
+     "arquivo": "Luta/eggfighter.swf",
+     "imagem": "Interface/Imagens/eggfighter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Geek Fighter",
+     "descricao": "Os nerds resolveram fazer um campeonato de luta.",
+     "controles": "Player 1 – Teclado – Setas: movimentam o personagem; K, L: atacam; Player 2 – Teclado – A, S, D, W: movimentam o personagem; F, G: atacam.",
+     "arquivo": "Luta/geek_fighter.swf",
+     "imagem": "Interface/Imagens/geek_fighter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Give Him A Monster",
+     "descricao": "Fique de olhos bem abertos para não ser pego desprevenido por algum monstro.",
+     "controles": "Teclado – Setas para esquerda e direita: atacam.",
+     "arquivo": "Luta/give_him_a_monster.swf",
+     "imagem": "Interface/Imagens/give_him_a_monster.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gladiater",
+     "descricao": "A princesa foi seqüestrada! Você precisa salvá-la dos guerreiros das trevas.",
+     "controles": "Teclado – Setas: movimentam o personagem; X: ataca; Z: pula.",
+     "arquivo": "Luta/gladiater.swf",
+     "imagem": "Interface/Imagens/gladiater.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Goblins Heart",
+     "descricao": "Os terríveis globins estão atacando o antigo mundo: empunhe sua espada contra eles.",
+     "controles": "Teclado – Setas: movimentam o personagem; Z: defende; X, C: atacam.",
+     "arquivo": "Luta/goblins_heart.swf",
+     "imagem": "Interface/Imagens/goblins_heart.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hit The Rabbit",
+     "descricao": "Explore este mundo de neve e acerte todos os coelhos mutantes que estão vindo de atacar.",
+     "controles": "Teclado – Setas: movimentam o personagem; Espaço: ataca.",
+     "arquivo": "Luta/hit_the_rabbit.swf",
+     "imagem": "Interface/Imagens/hit_the_rabbit.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Jedi vs jedi blades of light",
+     "descricao": "Mestre contra discípulo: a luta entre Obiwan e Anakin.",
+     "controles": "Teclado – A, D; Espaço: ataca; Setas para cima e para baixo: muda o ataque de alto para baixo.",
+     "arquivo": "Luta/jedi_vs_jedi_blades_of_light.swf",
+     "imagem": "Interface/Imagens/jedi_vs_jedi_blades_of_light.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "King Of Fighters Dream Match",
+     "descricao": "Entre em grandes lutas e torne-se campeão.",
+     "controles": "Teclado – A, S, D, W: movimentam o personagem; U, I, O, J, K, L: ataca.",
+     "arquivo": "Luta/king_of_fighters_dream_match.swf",
+     "imagem": "Interface/Imagens/king_of_fighters_dream_match.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Knights Of Rock",
+     "descricao": "Defenda seu reino e seu castelo dos inimigos.",
+     "controles": "Teclado – Setas: controlam o game.",
+     "arquivo": "Luta/knights_of_rock.swf",
+     "imagem": "Interface/Imagens/knights_of_rock.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Kucing Fighter",
+     "descricao": "Entre numa disputa e mostre quem é o felino mais forte da região.",
+     "controles": "Player 1 – Teclado – Setas: movimentam o personagem; O, P: atacam; Player 2 – Teclado – A, S, D, W: movimentam o personagem; G, H: atacam.",
+     "arquivo": "Luta/kucing_fighter.swf",
+     "imagem": "Interface/Imagens/kucing_fighter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mario Combat",
+     "descricao": "Faça justiça com o Mário, vingue o sumiço de seus amigos.",
+     "controles": "Teclado – Setas: Movimentam personagem; \"A\": Ataque.",
+     "arquivo": "Luta/mariocombat.swf",
+     "imagem": "Interface/Imagens/mariocombat.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Paw Paw Miaw",
+     "descricao": "Lute até não conseguir andar.",
+     "controles": "Teclado – Play 1: Setas: Movimentam personagem; O, P: Ataque. Play 2: W, A, S, D: Movimentam personagem; G, H: Ataque.",
+     "arquivo": "Luta/pawpawmiaw.swf",
+     "imagem": "Interface/Imagens/pawpawmiaw.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Penguin Sumo",
+     "descricao": "Suba no iceberg e tire seu adversário de cima dele.",
+     "controles": "Player 1 – Teclado – Z; C: giram o personagem; X: movimenta o personagem para frente; Player 2 – Teclado – J; L: giram o personagem; K: movimenta o personagem para frente.",
+     "arquivo": "Luta/penguin_sumo.swf",
+     "imagem": "Interface/Imagens/penguin_sumo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pushy Porkers",
+     "descricao": "Vamos brincar de sumô! Jogue seus adversários para fora do chiqueiro.",
+     "controles": "Teclado – Setas: movimentam o personagem.",
+     "arquivo": "Luta/pushy_porkers.swf",
+     "imagem": "Interface/Imagens/pushy_porkers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Roboxer 2",
+     "descricao": "Desvie dos ataques do seu adversário.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Luta/roboxer2.swf",
+     "imagem": "Interface/Imagens/roboxer2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Simpsons Snow Fight",
+     "descricao": "Atire bolas de neve nos personagens de \"Os Simpsons\".",
+     "controles": "Teclado – Setas: Desvia; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Luta/simpsonssnowfight.swf",
+     "imagem": "Interface/Imagens/simpsonssnowfight.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Street Avenger",
+     "descricao": "Detone todas as gangues das ruas de Nova York.",
+     "controles": "Teclado – W, A, S, D: Movimentam personagem; J; K; L: Interagem com o jogo.",
+     "arquivo": "Luta/streetavenger.swf",
+     "imagem": "Interface/Imagens/streetavenger.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Street Fighter2",
+     "descricao": "Vença o Sagat jogando com o Ryu.",
+     "controles": "Teclado – Setas: Movimentam personagem; S, D: Soco; X, C: Chute.",
+     "arquivo": "Luta/streetfighter2.swf",
+     "imagem": "Interface/Imagens/streetfighter2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "The King of Fighter Dream Match",
+     "descricao": "Derrote os lutadores mais feras de TKOF.",
+     "controles": "Teclado – Play 1 – W, A, S, D: Movimentam personagem; U, I, O, J, K, L: Interagem com o jogo. Play 2 – Setas: Movimentam personagem; 1-6: Interagem com o jogo.",
+     "arquivo": "Luta/thekingoffighterdreammatch.swf",
+     "imagem": "Interface/Imagens/thekingoffighterdreammatch.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Towel Fighter",
+     "descricao": "Pegue uma toalha bem molhada e acerte seu rival.",
+     "controles": "Teclado – Setas: movimentam o personagem; Espaço: pula; Ctrl: ataca.",
+     "arquivo": "Luta/towel_fighter.swf",
+     "imagem": "Interface/Imagens/towel_fighter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ultimate Robotnik Duel",
+     "descricao": "Destrua os inimigos nessa batalha de companheiro do Sonic.",
+     "controles": "Teclado – Play 1: Setas: Movimentam personagem; M: Ataque. Play 2: W, A, S, D: Movimentam personagem; G: Ataque.",
+     "arquivo": "Luta/ultimaterobotnikduel.swf",
+     "imagem": "Interface/Imagens/ultimaterobotnikduel.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Warped Tour Massacre",
+     "descricao": "Massacre seu adversário em várias batalhas.",
+     "controles": "Teclado – Setas: Movimentam personagens; Espaço: Defesa; A, S, D:Ataque.",
+     "arquivo": "Luta/warpedtourmassacre.swf",
+     "imagem": "Interface/Imagens/warpedtourmassacre.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "nave",
+   "nome": "Nave",
+   "jogos": [
+    {
+     "nome": "Aero Chaos",
+     "descricao": "Acerte as naves inimigas para completar as missões.",
+     "controles": "Teclado – Espaço: Bomba; Mouse – Movimenta nave; Botão esquerdo: Atira.",
+     "arquivo": "Nave/aerochaos.swf",
+     "imagem": "Interface/Imagens/aerochaos.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Air Dodger",
+     "descricao": "Suba e desça a nave para não bater nos balões e obstáculos.",
+     "controles": "Mouse – Botão esquerdo: Sobe nave.",
+     "arquivo": "Nave/airdodger.swf",
+     "imagem": "Interface/Imagens/airdodger.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Air Fighting",
+     "descricao": "Atire nas naves inimigas e supere as fases.",
+     "controles": "Mouse – Movimenta nave.",
+     "arquivo": "Nave/airfighting.swf",
+     "imagem": "Interface/Imagens/airfighting.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Air Show 1",
+     "descricao": "Faça verdadeiros shows aéreos com esses aviões.",
+     "controles": "Teclado – A, S, D: Manobras; Mouse – Movimenta avião.",
+     "arquivo": "Nave/airshow1.swf",
+     "imagem": "Interface/Imagens/airshow1.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Air Traffic Control",
+     "descricao": "Controle o fluxo de aviões no hangar.",
+     "controles": "Teclado – Espaço: Interage com o jogo; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Nave/Air_Traffic_Control.swf",
+     "imagem": "Interface/Imagens/Air_Traffic_Control.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Asteroids",
+     "descricao": "Atire em gigantes asteróides que caem do espaço.",
+     "controles": "Teclado – Setas: Movimentam nave; Seta baixo: Teletransporte; Espaço: Atira.",
+     "arquivo": "Nave/asteroids.swf",
+     "imagem": "Interface/Imagens/asteroids.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Avenger",
+     "descricao": "Acabe com várias máquinas estranhas que te atacam.",
+     "controles": "Teclado – Setas: Movimentam nave; CTRL: Atira.",
+     "arquivo": "Nave/avenger.swf",
+     "imagem": "Interface/Imagens/avenger.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Body Invaders",
+     "descricao": "Destrua todos os seres estranhos com sua nave dentro do túnel.",
+     "controles": "Mouse – Movimenta nave; Botão esquerdo: Atira.",
+     "arquivo": "Nave/body-invaders.swf",
+     "imagem": "Interface/Imagens/body-invaders.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "CanadAir",
+     "descricao": "Colete água do rio para apagar o incêndio na floresta.",
+     "controles": "Teclado – Setas: Movimentam avião; Espaço: Joga água.",
+     "arquivo": "Nave/canadair.swf",
+     "imagem": "Interface/Imagens/canadair.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Captin Zero",
+     "descricao": "Destrua as armas do inimigo e salve seus companheiros.",
+     "controles": "Teclado – Setas: Movimentam avião; Espaço: Bomba. Mouse: Movimenta avião; Botão esquerdo: Bomba.",
+     "arquivo": "Nave/captinzero.swf",
+     "imagem": "Interface/Imagens/captinzero.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Clash ‘n’ Slash",
+     "descricao": "Proteja a Terra das naves alienígenas.",
+     "controles": "Mouse – Movimenta nave; Botão esquerdo: Atira.",
+     "arquivo": "Nave/clashnslash.swf",
+     "imagem": "Interface/Imagens/clashnslash.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Color Wars",
+     "descricao": "Acabe com todos os quadrados mágicos que querem te acertar.",
+     "controles": "Mouse – Movimenta personagem; Botão esquerdo: Atira.",
+     "arquivo": "Nave/colorwars.swf",
+     "imagem": "Interface/Imagens/colorwars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cyborg Hefers",
+     "descricao": "Seja rápido na hora de atirar nos inimigos.",
+     "controles": "Teclado – Setas: Atiram; Mouse – Movimenta nave.",
+     "arquivo": "Nave/cyborghefers.swf",
+     "imagem": "Interface/Imagens/cyborghefers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dog Fight 2",
+     "descricao": "Destrua todos os aviões inimigos nessa batalha aérea na segunda versão do jogo.",
+     "controles": "Teclado – Setas: Movimentam avião; Alt: Bomba.",
+     "arquivo": "Nave/dogfight2.swf",
+     "imagem": "Interface/Imagens/dogfight2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dog Fight the Great War",
+     "descricao": "Destrua todos os aviões inimigos nessa batalha aérea na segunda versão do jogo.",
+     "controles": "Teclado – Setas: Movimentam avião; Alt: Bomba.",
+     "arquivo": "Nave/dogfight-the-great-war.swf",
+     "imagem": "Interface/Imagens/dogfight-the-great-war.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Doodle Defender 2",
+     "descricao": "Desenhe sua nave e destrua todos os outros desenhos inimigos.",
+     "controles": "Teclado – W, A, S, D: Movimenta nave; F/Shift/Enter: Atira; Espaço: Bomba.",
+     "arquivo": "Nave/doodle-defender-2.swf",
+     "imagem": "Interface/Imagens/doodle-defender-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Duck Fight",
+     "descricao": "Atire e destrua as naves com os patos inimigos.",
+     "controles": "Teclado – Setas: Movimentam avião; Espaço: Atira. Obs.: Para que o game funcione corretamente; instale o Shockwave Player que se encontra na categoria ESSENCIAIS do CD. Ao iniciar o jogo pela primeira vez; é necessário estar conectado à Internet para atualizá-lo. O game roda somente no navegador Internet Explorer; ativando os recursos do \"ActiveX\" do seu navegador.",
+     "arquivo": "Nave/duckfight/game.dcr",
+     "imagem": "Interface/Imagens/duckfight.jpg",
+     "tipo": "shockwave"
+    },
+    {
+     "nome": "ECO Battler",
+     "descricao": "Destrua os super aviões que vem em sua direção.",
+     "controles": "Teclado – Setas: Movimenta avião; Espaço: Atira.",
+     "arquivo": "Nave/ECO_Battler.swf",
+     "imagem": "Interface/Imagens/ECO_Battler.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fasteroids",
+     "descricao": "Destrua todos os asteróides que estão te atacando.",
+     "controles": "Teclado – Setas: Movimentam nave; Seta baixo: Especial; Alt: Atira.",
+     "arquivo": "Nave/fasteroids.swf",
+     "imagem": "Interface/Imagens/fasteroids.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fracture 2",
+     "descricao": "Atire nos símbolos da tela para exterminá-los.",
+     "controles": "Teclado – Setas: Movimentam personagem; W, A, S, D: Ataque.",
+     "arquivo": "Nave/fracture2.swf",
+     "imagem": "Interface/Imagens/fracture2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ghost Invaders",
+     "descricao": "Atire nos fantasminhas do PacMan para matá-los.",
+     "controles": "Mouse – Movimenta personagem; Botão esquerdo: Atira.",
+     "arquivo": "Nave/ghost-invaders.swf",
+     "imagem": "Interface/Imagens/ghost-invaders.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gluefo",
+     "descricao": "Pegue as bolinhas e atire para explodir as bolonas.",
+     "controles": "Mouse – Movimenta nave; Botão esquerdo: Atira.",
+     "arquivo": "Nave/gluefo.swf",
+     "imagem": "Interface/Imagens/gluefo.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Heli Storm 2",
+     "descricao": "Atire para todos os lados e complete as missões pedidas.",
+     "controles": "Teclado – W, A, S, D: Movimenta nave; 1: Arma; 2: Míssil; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Nave/helistorm2.swf",
+     "imagem": "Interface/Imagens/helistorm2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hostile Skies",
+     "descricao": "Exploda os aviões inimigos e vá para a base na hora certa.",
+     "controles": "Teclado – Espaço: Bomba; Mouse – Movimenta nave; Botão esquerdo: Atira.",
+     "arquivo": "Nave/hostileskies.swf",
+     "imagem": "Interface/Imagens/hostileskies.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hover Tanks 2",
+     "descricao": "Complete as missões neste planeta no qual tudo é possível.",
+     "controles": "Teclado – Setas: Movimentam personagem; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Nave/hovertanks2.swf",
+     "imagem": "Interface/Imagens/hovertanks2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Last Canopy",
+     "descricao": "Atire e roube energia dos seres e das máquinas para se fortalecer e passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Z: Atira; X: Laser; Mouse: Movimenta personagem.",
+     "arquivo": "Nave/lastcanopy.swf",
+     "imagem": "Interface/Imagens/lastcanopy.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Metal Wrath",
+     "descricao": "Atire nas naves e discos espaciais inimigos.",
+     "controles": "Teclado – Setas: Movimentam nave; A: Atira; E, R: Especial; F: Reparo.",
+     "arquivo": "Nave/metalwrath.swf",
+     "imagem": "Interface/Imagens/metalwrath.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Metro Siberia",
+     "descricao": "Controle a nave e tente evitar as colisões com os obstáculos.",
+     "controles": "Teclado – Espaço: Interage com o jogo",
+     "arquivo": "Nave/metro_siberia.swf",
+     "imagem": "Interface/Imagens/metro_siberia.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Moon Unit",
+     "descricao": "Pouse a nave e o bichinho com muita segurança para ela não explodir.",
+     "controles": "Teclado – Setas: Interagem com o jogo.",
+     "arquivo": "Nave/moon-unit.swf",
+     "imagem": "Interface/Imagens/moon-unit.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Morgan Moon",
+     "descricao": "Pouse sua nave com muita segurança.",
+     "controles": "Teclado – Setas: Movimentam personagem.",
+     "arquivo": "Nave/morganmoon.swf",
+     "imagem": "Interface/Imagens/morganmoon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Neon",
+     "descricao": "Atire nos corpos estranhos para acabar com eles.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Nave/neon.swf",
+     "imagem": "Interface/Imagens/neon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "NotePad Wars",
+     "descricao": "Extermine os objetos que estão te atacando.",
+     "controles": "Teclado – W, A, S, D: Movimentam nave; Espaço: Bomba.",
+     "arquivo": "Nave/notepadWars.swf",
+     "imagem": "Interface/Imagens/notepadWars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Orbit Blaster",
+     "descricao": "Atire nas naves espaciais para passar as fases.",
+     "controles": "Teclado – Espaço: Atira; Mouse – Movimenta nave.",
+     "arquivo": "Nave/orbitblaster.swf",
+     "imagem": "Interface/Imagens/orbitblaster.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Physics Invaders",
+     "descricao": "Atire nos bichinhos até eliminar todos para passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Atira.",
+     "arquivo": "Nave/physics-invaders.swf",
+     "imagem": "Interface/Imagens/physics-invaders.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "RaidenX",
+     "descricao": "Atire nas naves e nas bases para passar as fases.",
+     "controles": "Teclado – Setas: Movimentam personagem; Z: Atira; X: Bomba.",
+     "arquivo": "Nave/raidenx.swf",
+     "imagem": "Interface/Imagens/raidenx.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Reality",
+     "descricao": "Detone os objetos que vem de todos os lados.",
+     "controles": "Teclado -Setas: Movimentam nave; Mouse – Mira; Botão esquerdo: Bomba.",
+     "arquivo": "Nave/41st_Reality.swf",
+     "imagem": "Interface/Imagens/41st_Reality.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Roamand Protect",
+     "descricao": "Proteja o trajeto dos tanques de guerra de sua pátria.",
+     "controles": "Teclado – Setas: Movimentam nave; Espaço: Atira.",
+     "arquivo": "Nave/roamandprotect.swf",
+     "imagem": "Interface/Imagens/roamandprotect.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Shooot 3",
+     "descricao": "Atire raio laser nos símbolos par acabar com eles.",
+     "controles": "Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Nave/shooot3.swf",
+     "imagem": "Interface/Imagens/shooot3.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sky Fire",
+     "descricao": "Vença as batalhas, atire nos aviões inimigos.",
+     "controles": "Mouse – Movimenta avião; Botão esquerdo: Atira.",
+     "arquivo": "Nave/Sky_fire.swf",
+     "imagem": "Interface/Imagens/Sky_fire.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Squadron Angel",
+     "descricao": "Decole com seu avião e pegue o combustível espalhado na tela para chegar mais longe.",
+     "controles": "Teclado – Espaço: Interage com o jogo.",
+     "arquivo": "Nave/squadronangel.swf",
+     "imagem": "Interface/Imagens/squadronangel.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Stunt Pilot",
+     "descricao": "Faça manobras alucinantes e consiga passar por todos os obstáculos para passar de nível.",
+     "controles": "Teclado – Setas: Pilotam o avião.",
+     "arquivo": "Nave/stuntpilot.swf",
+     "imagem": "Interface/Imagens/stuntpilot.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Vector Wars",
+     "descricao": "Atire nos símbolos que estão circulando na tela.",
+     "controles": "Teclado – Setas: Movimentam nave; Mouse – Mira; Botão esquerdo: Atira.",
+     "arquivo": "Nave/VectorWars.swf",
+     "imagem": "Interface/Imagens/VectorWars.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Wings of Glory",
+     "descricao": "Atire no inimigo para salvar seus aviões que estão no solo.",
+     "controles": "Teclado – Setas: Movimentam avião; Espaço: Atira.",
+     "arquivo": "Nave/wingsofglory.swf",
+     "imagem": "Interface/Imagens/wingsofglory.jpg",
+     "tipo": "swf"
+    }
+   ]
+  },
+  {
+   "id": "puzzle",
+   "nome": "Puzzle",
+   "jogos": [
+    {
+     "nome": "4 Balls",
+     "descricao": "Forme fileiras com 4 bolas da mesma cor para ganhar.",
+     "controles": "Mouse – Botão esquerdo: Interagem com o jogo.",
+     "arquivo": "Puzzle/4-balls.swf",
+     "imagem": "Interface/Imagens/4-balls.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Abba Sona Mission",
+     "descricao": "Veja até onde você consegue subir, pule nos momentos certos para conseguir subir.",
+     "controles": "Teclado – Espaço: Salta.",
+     "arquivo": "Puzzle/abbasonamission.swf",
+     "imagem": "Interface/Imagens/abbasonamission.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Alphabet",
+     "descricao": "Seja rápido e tente teclar todo o alfabeto em ordem.",
+     "controles": "Teclado – Interage com o jogo.",
+     "arquivo": "Puzzle/alphabet.swf",
+     "imagem": "Interface/Imagens/alphabet.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ambient Parade Fin",
+     "descricao": "Capture todos os objetos coloridos para conseguir muitos pontos.",
+     "controles": "Teclado – Setas: Movimentam o objeto; Z;X: Interagem com o jogo.",
+     "arquivo": "Puzzle/ambientParadeFin.swf",
+     "imagem": "Interface/Imagens/ambientParadeFin.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Angular",
+     "descricao": "Movimente a bolinha pela tela e tente chegar até o final.",
+     "controles": "Teclado – Setas: Movimentam o objeto.",
+     "arquivo": "Puzzle/angular.swf",
+     "imagem": "Interface/Imagens/angular.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Animal 2",
+     "descricao": "Monte o caminho para o pequeno animal consiga chegar em sua toca.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/animal-2.swf",
+     "imagem": "Interface/Imagens/animal-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "ASCII Madness Evader",
+     "descricao": "Seja rápido e fuja de todas as letras que estão te perseguindo.",
+     "controles": "Teclado – Setas: Movimentam o objeto.",
+     "arquivo": "Puzzle/ASCII_Madness_Evader.swf",
+     "imagem": "Interface/Imagens/ASCII_Madness_Evader.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Atomz",
+     "descricao": "Veja onde é o melhor lugar para estourar o átomo e causar uma grande reação em cadeia.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/atomz.swf",
+     "imagem": "Interface/Imagens/atomz.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ball Revamped 5",
+     "descricao": "Seja habilidoso e controle a bolinha através do labirinto.",
+     "controles": "Teclado – Setas: Movimentam o objeto.",
+     "arquivo": "Puzzle/ball-revamped-5.swf",
+     "imagem": "Interface/Imagens/ball-revamped-5.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ball Rrevamped 3",
+     "descricao": "Seja habilidoso e controle a bolinha através do labirinto.",
+     "controles": "Teclado – Setas: Movimentam o objeto.",
+     "arquivo": "Puzzle/ball-revamped-3.swf",
+     "imagem": "Interface/Imagens/ball-revamped-3.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bam Boom",
+     "descricao": "Combine os movimentos de cada bolinha para conseguir levá-las aos lugares certos.",
+     "controles": "Teclado – Setas: Movimentam as bolas; Espaço: Interage com o jogo.",
+     "arquivo": "Puzzle/BamBoom.swf",
+     "imagem": "Interface/Imagens/BamBoom.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bateria",
+     "descricao": "Veja se você tem a manha para tocar a bateria.",
+     "controles": "Teclado – Y,U,G,K,H,J,B,N,M: Tocam a bateria.",
+     "arquivo": "Puzzle/bateria.swf",
+     "imagem": "Interface/Imagens/bateria.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bloc 2",
+     "descricao": "Movimente o bloco pelo mapa e tente leva-lo até o final.",
+     "controles": "Teclado – Setas: Movimentam o bloco.",
+     "arquivo": "Puzzle/bloc_2.swf",
+     "imagem": "Interface/Imagens/bloc_2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Blockular",
+     "descricao": "Remova todos os blocos que estão agrupados, tome cuidado para não deixar o tempo acabar.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/blockular.swf",
+     "imagem": "Interface/Imagens/blockular.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Bug Battle combat",
+     "descricao": "Movimente a caixa pela tela e impeça que os monstros passem por você.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/Bug_Battle_combat.swf",
+     "imagem": "Interface/Imagens/Bug_Battle_combat.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Chess 44",
+     "descricao": "Crie um bom plano de ataque e veja se consegue dar ganhar de seu oponente em um emocionante jogo de xadrez.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/chess44.swf",
+     "imagem": "Interface/Imagens/chess44.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Click Fest",
+     "descricao": "Seja rápido para conseguir clicar em todos os objetos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/clickfest.swf",
+     "imagem": "Interface/Imagens/clickfest.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cosmico",
+     "descricao": "Conecte as estrelas e forme constelações, tome cuidado para não perder muito tempo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/cosmico.swf",
+     "imagem": "Interface/Imagens/cosmico.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Cuber Xtreme",
+     "descricao": "Una os cubos para conseguir uma grande pontuação.",
+     "controles": "Teclado – Setas: Movimentam o personagem; Espaço: Interage com o jogo.",
+     "arquivo": "Puzzle/cuberxtreme.swf",
+     "imagem": "Interface/Imagens/cuberxtreme.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dark Melt",
+     "descricao": "Quebre as áreas congeladas do tabuleiro.",
+     "controles": "Teclado – Setas: Movimentam personagem; Espaço: Pula.",
+     "arquivo": "Puzzle/dark-melt.swf",
+     "imagem": "Interface/Imagens/dark-melt.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dedal",
+     "descricao": "Ache a saída do labirinto, seja mais rápido que seu adversário para conseguir ganhar.",
+     "controles": "Teclado – Setas: movimentam o personagem.",
+     "arquivo": "Puzzle/dedal.swf",
+     "imagem": "Interface/Imagens/dedal.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dots 2",
+     "descricao": "Escolha muito bem onde clicar para que você consiga a vitória.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/dots2.swf",
+     "imagem": "Interface/Imagens/dots2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dream Pet link",
+     "descricao": "Conecte as estrelas e forme constelações, tome cuidado para não perder muito tempo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/dream-pet-link.swf",
+     "imagem": "Interface/Imagens/dream-pet-link.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dream Racer",
+     "descricao": "Corra pelo campo e pegue todos os cubos coloridos para ganhar muitos pontos.",
+     "controles": "Teclado – Setas: Movimentam o personagem; espaço: salta",
+     "arquivo": "Puzzle/Dream_Racer.swf",
+     "imagem": "Interface/Imagens/Dream_Racer.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dreams",
+     "descricao": "Ache as diferenças que existem entre cada imagem.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/dreams.swf",
+     "imagem": "Interface/Imagens/dreams.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Dupligon",
+     "descricao": "Memorize a imagem que irá aparecer e tente copia-la.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/dupligon.swf",
+     "imagem": "Interface/Imagens/dupligon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Enigma",
+     "descricao": "Tente resolver todos os enigmas de cada nível, mova as peças pela tela até que elas de encaixem perfeitamente com o desenho no fundo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/Enigma.swf",
+     "imagem": "Interface/Imagens/Enigma.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Epsilon",
+     "descricao": "Controle o tempo e o espaço, mude os portais de posições para conseguir passar de nível.",
+     "controles": "Teclado – X: Controla o tempo; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/epsilon.swf",
+     "imagem": "Interface/Imagens/epsilon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Eye Ball",
+     "descricao": "Complete as formas geométricas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/eyeball.swf",
+     "imagem": "Interface/Imagens/eyeball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Fragment Prologue",
+     "descricao": "Escolha o melhor momento para atirar e conseguir estourar todas as esferas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/fragment-prologue.swf",
+     "imagem": "Interface/Imagens/fragment-prologue.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Frozen",
+     "descricao": "Seja rápido e venda muitos sorvetes antes que eles derretam.",
+     "controles": "Teclado – Setas: Controlam o carro; Espaço: Interage com o jogo.",
+     "arquivo": "Puzzle/frozen.swf",
+     "imagem": "Interface/Imagens/frozen.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "FWG Bridge",
+     "descricao": "Monte a ponte da melhor maneira para que ela consiga suportar o peso de todas as pessoas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/fwgbridge.swf",
+     "imagem": "Interface/Imagens/fwgbridge.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Go Spin",
+     "descricao": "Rebata todas as bolinhas que forem jogadas, mude a cor para fica igual a delas.",
+     "controles": "Teclado – A,S,D: Controlam as cores; Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/go-spin.swf",
+     "imagem": "Interface/Imagens/go-spin.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gravitat",
+     "descricao": "Coloque as peças nos lugares certos para garantir muitos pontos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/gravitat.swf",
+     "imagem": "Interface/Imagens/gravitat.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "gravitex",
+     "descricao": "Calcule o ângulo e a força necessário para jogar a bola dentro do buraco.",
+     "controles": "Teclado – Setas:Interagem com o jogo; espaço: Atira.",
+     "arquivo": "Puzzle/gravitex.swf",
+     "imagem": "Interface/Imagens/gravitex.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Gravity Master",
+     "descricao": "Crie objetos e os faça interagir com a bolinha para conseguir guia-la.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/gravity-master.swf",
+     "imagem": "Interface/Imagens/gravity-master.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Grid",
+     "descricao": "Mire e dispare a bolinha e tente faze-la passar entre as outras duas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/grid.swf",
+     "imagem": "Interface/Imagens/grid.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "HDOS Databanka",
+     "descricao": "Tente combinar todos os cubos, você terá poucos movimentos para finalizar cada nível.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/HDOS_Databanka.swf",
+     "imagem": "Interface/Imagens/HDOS_Databanka.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hex Mines",
+     "descricao": "Clique nos lugares para evitar de explodir as minas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/HexMines.swf",
+     "imagem": "Interface/Imagens/HexMines.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Hexxagon",
+     "descricao": "Crie um bom plano e tente dominar todos as áreas do jogo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/Hexxagon.swf",
+     "imagem": "Interface/Imagens/Hexxagon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Horse Run",
+     "descricao": "Pegue velocidade e impulso para conseguir saltar sobre os obstáculos.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Puzzle/horse-run.swf",
+     "imagem": "Interface/Imagens/horse-run.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Isotetris",
+     "descricao": "Empilhe todas as peças ocupando todas as áreas disponíveis para garantir muitos pontos.",
+     "controles": "Teclado – Setas: Movimentam o objeto; Espaço: Rotaciona o objeto.",
+     "arquivo": "Puzzle/isotetris.swf",
+     "imagem": "Interface/Imagens/isotetris.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Jelly blocks",
+     "descricao": "Movimente o mapa para conseguir unir todos os blocos.",
+     "controles": "Teclado – Setas: Interagem com o jogo",
+     "arquivo": "Puzzle/jelly-blocks.swf",
+     "imagem": "Interface/Imagens/jelly-blocks.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Jelly Towers",
+     "descricao": "Empilhe todas as peças para conseguir alimentar esse imenso monstro.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/jelly-towers.swf",
+     "imagem": "Interface/Imagens/jelly-towers.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Kaichou",
+     "descricao": "Atire nas bolinhas e veja quantos pontos você consegue fazer.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/kaichou.swf",
+     "imagem": "Interface/Imagens/kaichou.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Kinetikz 2",
+     "descricao": "Atire na bolinha e faça-a chegar até o local marcado.",
+     "controles": "Teclado – Setas: Movimentam a tela; Mouse – Mira; boão esquerdo: Atira.",
+     "arquivo": "Puzzle/kinetikz-2.swf",
+     "imagem": "Interface/Imagens/kinetikz-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Lesson 3 Kilogranima",
+     "descricao": "Some a quantidade de peso necessária para igualar a balança.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/lesson-3-kilogranima.swf",
+     "imagem": "Interface/Imagens/lesson-3-kilogranima.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mad World",
+     "descricao": "Ache todas as diferenças em cada uma das imagens.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/madworld.swf",
+     "imagem": "Interface/Imagens/madworld.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Mass Attack",
+     "descricao": "Adivinhe a quantidade de peso necessário para igualar a balança.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/mass-attack.swf",
+     "imagem": "Interface/Imagens/mass-attack.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "math Mountain",
+     "descricao": "Faça os cálculos matemáticos com velocidade para conseguir chegar ao topo da montanha.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/math-mountain.swf",
+     "imagem": "Interface/Imagens/math-mountain.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Maverick",
+     "descricao": "Passe por todos os perigos com a ajuda de suas armas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/maverick.swf",
+     "imagem": "Interface/Imagens/maverick.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Music Euphoria",
+     "descricao": "Passe o cursor do mouse sobre as esferas para conseguir muitos pontos.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/music-euphoria.swf",
+     "imagem": "Interface/Imagens/music-euphoria.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Nion",
+     "descricao": "Escolha o melhor momento para atira e conseguir estourar todas as esferas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/nion.swf",
+     "imagem": "Interface/Imagens/nion.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ongaku",
+     "descricao": "Siga o ritmo da música e acerte todas as passagem para ganhar muitos pontos.",
+     "controles": "Teclado – W;S: Controlam a nota; Setas: Interagem com o jogo.",
+     "arquivo": "Puzzle/ongaku.swf",
+     "imagem": "Interface/Imagens/ongaku.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Orb",
+     "descricao": "Leve a bolinha pelo labirinto e veja se consegue achar a saída.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/orb.swf",
+     "imagem": "Interface/Imagens/orb.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Orbis Impetus",
+     "descricao": "Acelere pela tela e tente capturar todas as bolinhas.",
+     "controles": "Teclado – Setas: Movimentam a bola.",
+     "arquivo": "Puzzle/orbis-impetus.swf",
+     "imagem": "Interface/Imagens/orbis-impetus.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pacxon",
+     "descricao": "Ajude nossa pequena bolinha amarela a lutar contra todos os fantasmas.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Puzzle/pacxon.swf",
+     "imagem": "Interface/Imagens/pacxon.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Paths",
+     "descricao": "Crie um linha entra a bola e estrela, movimente os obstáculos para conseguir passar.",
+     "controles": "Teclado – Espaço: Interage com o jogo; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/paths.swf",
+     "imagem": "Interface/Imagens/paths.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Paths 2",
+     "descricao": "Crie um linha entra a bola e estrela, movimente os obstáculos para conseguir passar.",
+     "controles": "Teclado – Espaço: Interage com o jogo; Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/paths-2.swf",
+     "imagem": "Interface/Imagens/paths-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Phit",
+     "descricao": "Movimente as peças pela tela para que consiga encaixa-las corretamente.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/phit.swf",
+     "imagem": "Interface/Imagens/phit.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pinwheels",
+     "descricao": "Clique nos lugares corretos para conseguir igualar as imagens.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/pinwheels.swf",
+     "imagem": "Interface/Imagens/pinwheels.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Pixelist",
+     "descricao": "Pegue os quadrados com as cores que você precisa, lembre-se de seguir a ordem dada no jogo.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/pixelist.swf",
+     "imagem": "Interface/Imagens/pixelist.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Puzzle Soccer",
+     "descricao": "Mire e chute as bolas, tente colocar as bolas de mesma cor juntas pra conseguir mais pontos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/puzzle_soccer_en.swf",
+     "imagem": "Interface/Imagens/puzzle_soccer_en.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Quick Stack",
+     "descricao": "Vá encaixando os retângulos coloridos em grupo de mesma cor para ganhar pontos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/quick-stack.swf",
+     "imagem": "Interface/Imagens/quick-stack.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Ragdoll Iinvaders",
+     "descricao": "Destrua todos os invasores que querem te explodir.",
+     "controles": "Teclado – Setas: movimentam o personagem; Espaço: atira.",
+     "arquivo": "Puzzle/ragdoll-invaders.swf",
+     "imagem": "Interface/Imagens/ragdoll-invaders.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Redlead",
+     "descricao": "Ajude na travessia de todas essas bolinhas, quanto mais você conseguir mais pontos ganhará.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/redlead.swf",
+     "imagem": "Interface/Imagens/redlead.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Scribble 2",
+     "descricao": "Seja rápido e passe a linha colorida por todos os pontos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/scribble-2.swf",
+     "imagem": "Interface/Imagens/scribble-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Silver Sphere",
+     "descricao": "Role a bolinha pela tela e faça o possível para passar de nível.",
+     "controles": "Teclado – Setas: Movimentam o personagem.",
+     "arquivo": "Puzzle/silversphere.swf",
+     "imagem": "Interface/Imagens/silversphere.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Skill Stack",
+     "descricao": "Vá construindo a torre, quanto mais alta ela for maior será sua pontuação.",
+     "controles": "Teclado – Espaço: Interage com o jogo.",
+     "arquivo": "Puzzle/skillstack.swf",
+     "imagem": "Interface/Imagens/skillstack.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sonic Heroes Puzzle",
+     "descricao": "Organize as peças para conseguir uma grande pontuação.",
+     "controles": "Teclado – Setas: Interagem com o jogo",
+     "arquivo": "Puzzle/sonic-heroes-puzzle.swf",
+     "imagem": "Interface/Imagens/sonic-heroes-puzzle.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sousa Palooza",
+     "descricao": "Destrua todos os instrumentos que querem destruir tudo.",
+     "controles": "Teclado – Setas: Movimentam o objeto; Espaço: Atira.",
+     "arquivo": "Puzzle/sousapalooza.swf",
+     "imagem": "Interface/Imagens/sousapalooza.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Space Ball",
+     "descricao": "Organize o mapa para conseguir levar a bolinha para o buraco.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/spaceball.swf",
+     "imagem": "Interface/Imagens/spaceball.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Speed Drill",
+     "descricao": "Passe com o cursor do mouse bem rápido sobre a barra para que a escavadeira consiga ir bem fundo.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/speed-drill.swf",
+     "imagem": "Interface/Imagens/speed-drill.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Splitter",
+     "descricao": "Faça os cortes nos lugares certos para conseguir levar a carinha até a saída.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/splitter.swf",
+     "imagem": "Interface/Imagens/splitter.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Star Shine 2",
+     "descricao": "Acerte a estrela na posição certa para conseguir iluminar todas.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/starshine-2.swf",
+     "imagem": "Interface/Imagens/starshine-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Sticky Stuff",
+     "descricao": "Capture todas as bolinhas claras, desvie-se das vermelhas que querem de derrotar.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/stickystuff.swf",
+     "imagem": "Interface/Imagens/stickystuff.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Tilt 2",
+     "descricao": "Tente manter o equilíbrio na vareta por mais tempo para ganhar muito tempo.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/tilt-2.swf",
+     "imagem": "Interface/Imagens/tilt-2.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Traffic Diversion",
+     "descricao": "Guie os veículos para os lugares corretos.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/traffic-diversion.swf",
+     "imagem": "Interface/Imagens/traffic-diversion.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Triangles",
+     "descricao": "Teste seu sincronismo, controle as duas bolinhas ao mesmo tempo para conseguir muitos pontos.",
+     "controles": "Teclado – W,A,S,D: movimentam uma bolinha; Mouse – Movimentam outra bolinha.",
+     "arquivo": "Puzzle/triangles.swf",
+     "imagem": "Interface/Imagens/triangles.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Twins",
+     "descricao": "Ligue as bolas de cor iguais para conseguir maior pontuação.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/twins.swf",
+     "imagem": "Interface/Imagens/twins.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "up Beat",
+     "descricao": "Siga o ritmo da música e acerte todas as passagem para ganhar muitos pontos.",
+     "controles": "Teclado – A,S,D,J,K,L; Espaço: Interagem com o jogo.",
+     "arquivo": "Puzzle/up-beat.swf",
+     "imagem": "Interface/Imagens/up-beat.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "World Defense",
+     "descricao": "Proteja o planeta da queda dos meteoros.",
+     "controles": "Mouse – Botão esquerdo: Interage com o jogo.",
+     "arquivo": "Puzzle/world-defense.swf",
+     "imagem": "Interface/Imagens/world-defense.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "X Raye",
+     "descricao": "Movimente a vara pela tela e tente acender todas as luzes.",
+     "controles": "Teclado – setas: Movimentam a vara; Espaço: Interage com o jogo.",
+     "arquivo": "Puzzle/xraye.swf",
+     "imagem": "Interface/Imagens/xraye.jpg",
+     "tipo": "swf"
+    },
+    {
+     "nome": "Z Wingo",
+     "descricao": "Movimente a bola branca pela tela e proteja a bola maior evitando que ela saia de dentro do círculo.",
+     "controles": "Mouse – Interage com o jogo.",
+     "arquivo": "Puzzle/zwingo.swf",
+     "imagem": "Interface/Imagens/zwingo.jpg",
+     "tipo": "swf"
+    }
+   ]
+  }
+ ]
+}
