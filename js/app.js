@@ -1,13 +1,16 @@
 // Flashteca — roteamento por hash, estante de discos, menu de disco, player e explorador do archive.org.
 import { carregarListagem, caminhoNoArchive, urlArquivo, buscarItens, metadadosItem, CONTEINERES } from "./archive.js";
+import { catalogoComCache, catalogoSalvo, detectarFormato, resolverPagina, acharNaImagem } from "./catalogo.js";
 
 const app = document.getElementById("app");
 const trilha = document.getElementById("trilha");
-let listaDiscos = null;
-async function idsDiscos() {
-  listaDiscos ??= fetch("data/discos.json").then((r) => r.json());
-  return (await listaDiscos).map((d) => d.id);
-}
+// Repositório do site no GitHub (para publicar discos na estante pública via issue).
+const REPO = location.hostname.endsWith(".github.io")
+  ? `${location.hostname.split(".")[0]}/${location.pathname.split("/")[1] || location.hostname}`
+  : "guilhermrosa/flashteca";
+
+let listaSite = null;
+const discosDoSite = () => (listaSite ??= fetch("data/discos.json").then((r) => r.json()).catch(() => []));
 const cacheDiscos = new Map();
 
 // ---------- armazenamento local (favoritos e recentes) ----------
@@ -39,14 +42,42 @@ const semAcento = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(
 const tamanho = (b) => (b > 1048576 ? (b / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1024)) + " KB");
 const h = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content; };
 
-async function disco(id) {
+// ---------- discos: estante do site + estante do navegador ----------
+const minhaEstante = () => guardar.ler("estante", []);
+async function entradaDisco(id) {
+  const site = await discosDoSite();
+  const noSite = site.find((d) => d.id === id || d.item === id);
+  if (noSite) return { ...noSite, origem: "site" };
+  const local = minhaEstante().find((d) => d.id === id || d.item === id);
+  if (local) return { ...local, origem: "local" };
+  return { id, item: id, origem: "avulso" }; // qualquer item do archive.org com menu reconhecível
+}
+function alternarMinhaEstante(d) {
+  const lista = minhaEstante().filter((x) => x.item !== d.item);
+  const entrou = lista.length === minhaEstante().length;
+  if (entrou) lista.push({ id: d.item, titulo: d.titulo, ano: d.ano, item: d.item, iso: d.iso });
+  guardar.gravar("estante", lista);
+  return entrou;
+}
+async function disco(id, progresso) {
   if (!cacheDiscos.has(id)) {
-    cacheDiscos.set(id, fetch(`data/${id}.json`).then((r) => {
-      if (!r.ok) throw new Error("Disco não encontrado");
-      return r.json();
-    }));
+    cacheDiscos.set(id, (async () => {
+      const e = await entradaDisco(id);
+      const cat = await catalogoComCache(e.item, { conteiner: e.iso, progresso });
+      return { ...cat, id: e.id, titulo: e.titulo || cat.titulo, ano: e.ano ?? cat.ano, origem: e.origem };
+    })().catch((err) => { cacheDiscos.delete(id); throw err; }));
   }
   return cacheDiscos.get(id);
+}
+function carregando(msg) {
+  let el = app.querySelector(".carregando-disco");
+  if (!el) app.replaceChildren(h(`<p class="carregando carregando-disco"></p>`)), (el = app.querySelector(".carregando-disco"));
+  el.textContent = msg;
+}
+function linkPublicar(d) {
+  const entrada = { id: d.item, titulo: d.titulo, ano: d.ano, item: d.item, iso: d.iso };
+  const corpo = `Disco para adicionar à estante pública da Flashteca (pode ajustar o título antes de enviar).\n\n\`\`\`json\n${JSON.stringify(entrada, null, 1)}\n\`\`\`\n`;
+  return `https://github.com/${REPO}/issues/new?` + new URLSearchParams({ title: `[estante] ${d.titulo}`, body: corpo });
 }
 function todosJogos(d) {
   return d.categorias.flatMap((c) => c.jogos.map((j) => ({ ...j, categoria: c.nome, categoriaId: c.id })));
@@ -92,8 +123,22 @@ function telaCheia(el) {
 }
 
 // ---------- telas ----------
+function cartaoDisco(d) {
+  const cat = catalogoSalvo(d.item);
+  const n = cat && cat.categorias.reduce((t, c) => t + c.jogos.length, 0);
+  return `
+    <a class="disco-card" href="#/disco/${encodeURIComponent(d.id)}">
+      <img src="https://archive.org/services/img/${esc(d.item)}" alt="" loading="lazy">
+      <div>
+        <strong>${esc(d.titulo || d.item)}</strong>
+        <span>${[d.ano, n && `${n} jogos`, cat && `${cat.categorias.length} categorias`].filter(Boolean).join(" · ") || "Abrir disco"}</span>
+      </div>
+    </a>`;
+}
+
 async function telaEstante() {
-  const discos = await Promise.all((await idsDiscos()).map(disco));
+  const discos = await discosDoSite();
+  const meus = minhaEstante().filter((m) => !discos.some((d) => d.item === m.item));
   const recentes = guardar.ler("recentes", []);
   app.replaceChildren(h(`
     <section class="intro">
@@ -104,20 +149,19 @@ async function telaEstante() {
     <section>
       <h2 class="secao">Estante</h2>
       <div class="estante">
-        ${discos.map((d) => `
-          <a class="disco-card" href="#/disco/${d.id}">
-            <img src="https://archive.org/services/img/${esc(d.item)}" alt="" loading="lazy">
-            <div>
-              <strong>${esc(d.titulo)}</strong>
-              <span>${d.ano ? d.ano + " · " : ""}${todosJogos(d).length} jogos · ${d.categorias.length} categorias</span>
-            </div>
-          </a>`).join("")}
+        ${discos.map(cartaoDisco).join("")}
         <a class="disco-card disco-vazio" href="#/explorar">
           <div class="disco-mais" aria-hidden="true">+</div>
           <div><strong>Procurar outro disco</strong><span>Busque no Internet Archive e abra qualquer CD com Flash dentro</span></div>
         </a>
       </div>
     </section>
+    ${meus.length ? `
+    <section>
+      <h2 class="secao">Minha estante</h2>
+      <p class="dica">Discos que você adicionou neste navegador.</p>
+      <div class="estante">${meus.map(cartaoDisco).join("")}</div>
+    </section>` : ""}
     ${recentes.length ? `
     <section>
       <h2 class="secao">Jogados recentemente</h2>
@@ -134,10 +178,10 @@ async function telaEstante() {
 }
 
 // filtro do menu do disco fica entre navegações (ex.: voltar do jogo para a lista)
-const estadoDisco = { categoria: "todos", busca: "" };
+const estadoDisco = { categoria: "todos", busca: "", mostrarOff: false };
 
 async function telaDisco(id) {
-  const d = await disco(id);
+  const d = await disco(id, carregando);
   const jogos = todosJogos(d);
   const base = (p) => urlArquivo(d.item, d.iso, p);
 
@@ -153,11 +197,19 @@ async function telaDisco(id) {
           <a class="botao" href="#/item/${encodeURIComponent(d.item)}">Ver todos os arquivos</a>
           <a class="botao" href="https://archive.org/details/${esc(d.item)}" target="_blank" rel="noopener">No archive.org ↗</a>
         </div>
+        ${d.origem !== "site" ? `
+        <div class="acoes">
+          <button class="botao botao-forte" id="bt-estante" type="button"></button>
+          <a class="botao" href="${esc(linkPublicar(d))}" target="_blank" rel="noopener" title="Abre uma issue no GitHub; a Action do repositório adiciona o disco">Publicar na estante do site ↗</a>
+        </div>` : ""}
       </div>
     </section>
     <section class="filtros">
       <div class="chips" role="tablist"></div>
-      <input class="busca" type="search" placeholder="Buscar jogo…" aria-label="Buscar jogo">
+      <div class="linha-busca">
+        <input class="busca" type="search" placeholder="Buscar jogo…" aria-label="Buscar jogo">
+        ${jogos.some((j) => !jogavel(j)) ? `<label class="opcao"><input type="checkbox" id="mostrar-off"> Mostrar os ${jogos.filter((j) => !jogavel(j)).length} que não rodam no navegador</label>` : ""}
+      </div>
     </section>
     <p class="contagem" aria-live="polite"></p>
     <div class="grade"></div>
@@ -178,23 +230,24 @@ async function telaDisco(id) {
   function desenhar() {
     const fav = favoritos();
     const termo = semAcento(estadoDisco.busca.trim());
-    let lista = jogos;
+    const visiveis = estadoDisco.mostrarOff ? jogos : jogos.filter(jogavel);
+    let lista = visiveis;
     if (estadoDisco.categoria === "favoritos") lista = lista.filter((j) => fav.has(chaveJogo(id, j.arquivo)));
     else if (estadoDisco.categoria !== "todos") lista = lista.filter((j) => j.categoriaId === estadoDisco.categoria);
     if (termo) lista = lista.filter((j) => semAcento(j.nome + " " + j.descricao).includes(termo));
 
     chips.innerHTML = opcoes.map((o) => {
-      const n = o.id === "todos" ? jogos.length
-        : o.id === "favoritos" ? jogos.filter((j) => fav.has(chaveJogo(id, j.arquivo))).length
-        : jogos.filter((j) => j.categoriaId === o.id).length;
+      const n = o.id === "todos" ? visiveis.length
+        : o.id === "favoritos" ? visiveis.filter((j) => fav.has(chaveJogo(id, j.arquivo))).length
+        : visiveis.filter((j) => j.categoriaId === o.id).length;
       return `<button type="button" role="tab" class="chip" data-cat="${o.id}" aria-selected="${o.id === estadoDisco.categoria}">${esc(o.nome)} <small>${n}</small></button>`;
     }).join("");
     contagem.textContent = lista.length === 1 ? "1 jogo" : `${lista.length} jogos`;
     grade.innerHTML = lista.length ? lista.map((j) => `
-      <a class="jogo${j.tipo !== "swf" ? " jogo-off" : ""}" href="#/disco/${id}/jogar/${encodeURIComponent(j.arquivo)}" title="${esc(j.descricao)}">
-        <img src="${base(j.imagem)}" alt="" loading="lazy">
+      <a class="jogo${jogavel(j) ? "" : " jogo-off"}" href="#/disco/${encodeURIComponent(id)}/jogar/${encodeURIComponent(j.arquivo)}" title="${esc(j.descricao)}">
+        ${j.imagem ? `<img src="${base(j.imagem)}" alt="" loading="lazy">` : `<div class="sem-capa">${esc(j.nome.slice(0, 2))}</div>`}
         ${fav.has(chaveJogo(id, j.arquivo)) ? `<span class="selo-fav" aria-label="favorito">★</span>` : ""}
-        ${j.tipo !== "swf" ? `<span class="selo">${j.tipo === "windows" ? "Windows" : "Shockwave"}</span>` : ""}
+        ${jogavel(j) ? "" : `<span class="selo">${j.tipo === "windows" ? "Windows/DOS" : "Shockwave"}</span>`}
         <span class="jogo-nome">${esc(j.nome)}</span>
         <span class="jogo-cat">${esc(j.categoria)}</span>
       </a>`).join("")
@@ -208,9 +261,21 @@ async function telaDisco(id) {
     desenhar();
   });
   busca.addEventListener("input", () => { estadoDisco.busca = busca.value; desenhar(); });
+  const off = app.querySelector("#mostrar-off");
+  if (off) {
+    off.checked = estadoDisco.mostrarOff;
+    off.addEventListener("change", () => { estadoDisco.mostrarOff = off.checked; desenhar(); });
+  }
   if (d.trilha) ligarTrilha(app.querySelector("#bt-trilha"), base(d.trilha));
+  const btEstante = app.querySelector("#bt-estante");
+  if (btEstante) {
+    const rotulo = () => (btEstante.textContent = minhaEstante().some((x) => x.item === d.item) ? "✓ Na minha estante (remover)" : "＋ Adicionar à minha estante");
+    btEstante.addEventListener("click", () => { alternarMinhaEstante(d); rotulo(); });
+    rotulo();
+  }
   desenhar();
 }
+const jogavel = (j) => j.tipo === "swf" || j.tipo === "pagina";
 
 function ligarTrilha(botao, url) {
   const atualizar = () => {
@@ -227,28 +292,37 @@ function ligarTrilha(botao, url) {
 }
 
 async function telaJogoDisco(id, arquivo) {
-  const d = await disco(id);
+  const d = await disco(id, carregando);
   const jogos = todosJogos(d);
   const i = jogos.findIndex((j) => j.arquivo === arquivo);
   if (i < 0) return telaErro("Jogo não encontrado neste disco.");
   const j = jogos[i];
-  const url = urlArquivo(d.item, d.iso, j.arquivo);
-  const imagem = urlArquivo(d.item, d.iso, j.imagem);
   const chave = chaveJogo(id, j.arquivo);
+  const imagem = j.imagem ? urlArquivo(d.item, d.iso, j.imagem) : null;
   trilha.pause();
+
+  // jogos que o CD abria por uma página HTML: descobre o SWF embutido nela
+  let alvo = { caminho: j.arquivo, tipo: j.tipo };
+  if (j.tipo === "pagina") {
+    carregando("Abrindo a página do jogo…");
+    const achar = await acharNaImagem(d.item, d.iso);
+    alvo = (await resolverPagina(d.item, d.iso, j.arquivo, achar)) || { caminho: j.arquivo, tipo: "sem-flash" };
+  }
+  const url = urlArquivo(d.item, d.iso, alvo.caminho);
+  const link = (k) => `#/disco/${encodeURIComponent(id)}/jogar/${encodeURIComponent(jogos[k].arquivo)}`;
 
   const controles = j.controles.split(";").map((c) => c.trim()).filter(Boolean);
   telaPlayer({
-    voltar: { href: `#/disco/${id}`, texto: d.titulo },
+    voltar: { href: `#/disco/${encodeURIComponent(id)}`, texto: d.titulo },
     nome: j.nome,
     sub: j.categoria,
     descricao: j.descricao,
     controles,
     url,
     chave,
-    incompativel: j.tipo === "swf" ? null : j.tipo,
-    anterior: i > 0 ? `#/disco/${id}/jogar/${encodeURIComponent(jogos[i - 1].arquivo)}` : null,
-    proximo: i < jogos.length - 1 ? `#/disco/${id}/jogar/${encodeURIComponent(jogos[i + 1].arquivo)}` : null,
+    incompativel: alvo.tipo === "swf" ? null : alvo.tipo,
+    anterior: i > 0 ? link(i - 1) : null,
+    proximo: i < jogos.length - 1 ? link(i + 1) : null,
   });
   registrarRecente({ chave, nome: j.nome, origem: d.titulo, imagem, link: location.hash });
 }
@@ -280,8 +354,10 @@ function telaPlayer(o) {
   `));
   const palco = app.querySelector("#palco");
   if (o.incompativel === "windows") {
-    palco.replaceChildren(h(`<div class="aviso">Este é um <strong>programa de Windows</strong> (.exe), não um jogo em Flash, então não roda no navegador.
-      Dá para baixar e abrir no Windows (ou no Wine).</div>`));
+    palco.replaceChildren(h(`<div class="aviso">Este é um <strong>programa de Windows ou DOS</strong> (.exe/.com), não um jogo em Flash, então não roda no navegador.
+      Dá para baixar e abrir no Windows, no Wine ou no DOSBox.</div>`));
+  } else if (o.incompativel === "sem-flash") {
+    palco.replaceChildren(h(`<div class="aviso">A página deste jogo não embute um arquivo Flash que a Flashteca encontre (pode ser um jogo em Java ou em outro formato).</div>`));
   } else if (o.incompativel) {
     palco.replaceChildren(h(`<div class="aviso">Este jogo é <strong>Shockwave</strong> (Adobe Director), um formato diferente do Flash que o Ruffle ainda não roda.
       Dá para baixar o arquivo e abrir num PC antigo ou máquina virtual com o Shockwave Player.</div>`));
@@ -386,13 +462,22 @@ async function telaItem(id) {
   for (const c of conteineres) {
     try {
       const lista = await carregarListagem(meta, c.name);
-      grupos.push({ nome: c.name, conteiner: c.name, swfs: lista.filter((f) => /\.swf$/i.test(f.caminho)), dcr: lista.filter((f) => /\.dcr$/i.test(f.caminho)).length });
+      grupos.push({ nome: c.name, conteiner: c.name, formato: detectarFormato(lista), swfs: lista.filter((f) => /\.swf$/i.test(f.caminho)), dcr: lista.filter((f) => /\.dcr$/i.test(f.caminho)).length });
     } catch (e) {
       grupos.push({ nome: c.name, conteiner: c.name, erro: e.message, swfs: [] });
     }
   }
   const total = grupos.reduce((n, g) => n + g.swfs.length, 0);
   filtro.hidden = total < 12;
+  const comMenu = grupos.find((g) => g.formato);
+  if (comMenu) {
+    app.querySelector(".disco-topo").after(h(`
+      <div class="banner-menu">
+        <div><strong>Este disco tem o menu original.</strong>
+        <span>Dá para abrir com capas, categorias e descrições, e guardar na sua estante.</span></div>
+        <a class="botao botao-forte" href="#/disco/${encodeURIComponent(id)}">Abrir com o menu do disco</a>
+      </div>`));
+  }
 
   function desenhar() {
     const termo = semAcento(filtro.value.trim());

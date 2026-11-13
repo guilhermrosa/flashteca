@@ -1,0 +1,53 @@
+name: Adicionar disco à estante
+
+# Disparado pelo botão "Publicar na estante do site", que abre uma issue com título "[estante] ...".
+# Só processa issues abertas pelo dono do repositório.
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  adicionar:
+    if: startsWith(github.event.issue.title, '[estante]') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Acrescentar o disco em data/discos.json
+        id: disco
+        env:
+          CORPO: ${{ github.event.issue.body }}
+          ERRO_ARQ: ${{ runner.temp }}/erro.txt
+        run: python3 scripts/adicionar_disco.py
+
+      - name: Commit no nome de quem abriu a issue
+        env:
+          LOGIN: ${{ github.event.issue.user.login }}
+          USER_ID: ${{ github.event.issue.user.id }}
+          TITULO: ${{ steps.disco.outputs.titulo }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "$LOGIN"
+          git config user.email "$USER_ID+$LOGIN@users.noreply.github.com"
+          git add data/discos.json
+          git commit -m "Adiciona $TITULO à estante" -m "Closes #$NUMERO"
+          git push
+
+      - name: Fechar a issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }} --comment "Disco adicionado à estante. O site atualiza em um ou dois minutos."
+
+      - name: Avisar na issue se deu errado
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ERRO_ARQ: ${{ runner.temp }}/erro.txt
+        run: |
+          MSG="Não consegui adicionar o disco."
+          [ -f "$ERRO_ARQ" ] && MSG="$MSG $(cat "$ERRO_ARQ")"
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "$MSG Veja o log da Action para detalhes."

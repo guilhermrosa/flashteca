@@ -14,6 +14,9 @@ consegue servir arquivos de dentro de imagens ISO/ZIP e libera CORS para isso.
 - **Estante**: discos com menu curado (capas, categorias, descrições e controles do catálogo original).
   - *Digerati Games — 450 Jogos em DVD* (2007): 454 jogos em 8 categorias, trilha do menu e revista em PDF.
   - *Digerati Jogos de Meninas #3 — 800 Jogos*: 824 jogos (moda virtual, maquiagem, culinária, decoração, aventura).
+  - *Game Mix Nº 1 — GMIX001* (2004): 302 jogos em Flash (o disco tem outros 157 de Windows/DOS).
+- **Minha estante**: ao abrir no explorador um disco com o menu da Digerati, dá para abri-lo com capas e
+  categorias e guardá-lo na estante do navegador, ou publicá-lo na estante do site (veja abaixo).
 - **Explorar o Archive**: busque qualquer item de software do archive.org (ou cole o link) e a Flashteca
   lista os `.swf` dentro das imagens de disco para jogar.
 - Favoritos e "jogados recentemente" (guardados no navegador), busca sem acento, tela cheia.
@@ -34,23 +37,34 @@ python3 -m http.server 8000
 
 E abra http://localhost:8000.
 
+## Como os discos são lidos
+
+Não há catálogo pré-gerado: o site lê o menu original do CD direto da imagem no archive.org e guarda
+o resultado no navegador. Dois formatos de menu da Digerati são reconhecidos (`js/catalogo.js`):
+
+- **XML** (discos de ~2007 em diante): pasta `XML/` com um arquivo por categoria, em Windows-1252.
+- **Planilha** (discos de ~2004): `interface/conteudo.htm`, uma tabela exportada do Excel.
+
+Jogos que o CD abria por uma página HTML têm o `.swf` embutido descoberto na hora de jogar.
+Programas de Windows/DOS e jogos Shockwave aparecem marcados e ficam escondidos por padrão.
+
 ## Adicionar um disco à estante
 
-Os discos da Digerati usam todos o mesmo menu: uma pasta `XML/` com o catálogo de cada categoria
-(nome, descrição, controles, caminho) e as miniaturas em `Interface/Imagens/`. Para adicionar um:
+Pelo site: em **Explorar o Archive**, abra o item; se o disco tiver um menu reconhecível, aparece
+**Abrir com o menu do disco**. Lá há dois botões:
 
-1. Inclua o disco em `data/discos.json` (`id`, `titulo`, `ano`, `item` do archive.org e nome do arquivo `iso`).
-2. Rode o gerador, que baixa a listagem e os XMLs direto do archive.org e confere cada caminho:
+- **Adicionar à minha estante**: fica só no seu navegador.
+- **Publicar na estante do site**: abre uma issue já preenchida neste repositório. A Action
+  `.github/workflows/adicionar-disco.yml` confere o item no archive.org, acrescenta o disco em
+  `data/discos.json`, faz o commit em nome de quem abriu a issue e fecha a issue. Só issues abertas
+  pelo dono do repositório são processadas.
 
-```bash
-python3 scripts/build_disco.py <id>
-```
+À mão: acrescente `{ "id", "titulo", "ano", "item", "iso" }` em `data/discos.json`.
 
-Isso grava `data/<id>.json`, e o disco já aparece na estante.
-
-Outros discos já encontrados no acervo com o mesmo formato: *Jogos de Menina + de 300* (`goma_300`),
+Outros discos já encontrados no acervo: *Jogos de Menina + de 300* (`goma_300`),
 *+ de 260* (`joma_260`), *+ de 200* (`jome_200`), *Girl Games* nº 2, 8 e 13 (`JOMA002`, `JOMA008`, `joma-013`),
 *Girl Games Especial nº 2* (`girlgames_esp2`), *Jogos de Menina* nº 15, 18 e 19 (`JOME015`, `jome018_202509`, `jome-019`),
+*Game Mix* 2, 3 e 4 (`gmix-002-digerati`, `digerati-500-jogos-game-mix-03`, `gmix-004-digerati`),
 *500 Supergames Digerati* (`cd-digerati-500`), *+ de 450 Jogos* (`maisde450jogos`).
 
 ## Estrutura
@@ -59,10 +73,11 @@ Outros discos já encontrados no acervo com o mesmo formato: *Jogos de Menina + 
 index.html          casca da página, carrega o Ruffle (unpkg) e o app
 js/app.js           rotas (#/, #/disco/…, #/explorar, #/item/…), telas e player
 js/archive.js       metadados, busca e listagem de imagens de disco no archive.org
+js/catalogo.js      leitura dos menus originais dos CDs (XML e planilha)
 css/style.css       visual
-data/discos.json    discos da estante
-data/<id>.json      catálogo de cada disco
-scripts/            gerador de catálogo
+data/discos.json    discos da estante do site
+scripts/            script usado pela Action de publicar disco
+.github/workflows/  Action que publica discos a partir de issues
 ```
 
 Os direitos dos jogos pertencem aos seus autores; este projeto apenas aponta para o acervo público do Internet Archive.

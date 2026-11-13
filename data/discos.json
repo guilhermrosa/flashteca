@@ -12,5 +12,12 @@
   "ano": null,
   "item": "digerati-jogos-de-meninas-3-cd-rom",
   "iso": "JOME.ISO"
+ },
+ {
+  "id": "game-mix-01",
+  "titulo": "Game Mix Nº 1 — GMIX001",
+  "ano": 2004,
+  "item": "game-mix-01",
+  "iso": "GameMix01.iso"
  }
 ]
